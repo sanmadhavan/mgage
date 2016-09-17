@@ -1,0 +1,22 @@
+<insurance>
+	<id>Policy Quote - Dawne</id>
+	<uniqueNumber>Allianz-QUOTE-111</uniqueNumber>
+	<insurancetype>Quote</insurancetype>
+	<status>Accepted</status>
+	<mortgageCompany>JPMC</mortgageCompany>
+	<Borrower>Dawne</Borrower>
+	<PropertyAddress>233, 1st Street Park, Whitehart Lane,California</PropertyAddress>
+	<insuranceTerm>1 Year </insuranceTerm>
+	<effectiveDate>11-05-2014</effectiveDate>
+	<expiryDate>11-05-2015</expiryDate>
+	<premium>$1000</premium>
+	<DwellingCoverage>$200,000</DwellingCoverage>
+	<extendedCoverage>$100,000</extendedCoverage>
+	<equipmentsCoverage>$15,000</equipmentsCoverage>
+	<lossofUse></lossofUse>
+	<deductions>1%</deductions>
+	<mortgageClause></mortgageClause>
+	<loanNumber></loanNumber>
+	<effectiveTime></effectiveTime>
+	<mchainReference>08ff18f8deb8d1e99f3237797ae9a7dce9277479de8067f52ccf546b999ba6aa</mchainReference>
+</insurance>

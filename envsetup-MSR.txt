@@ -1,0 +1,191 @@
+ENV Setup _ MSR
+
+MSR MAIN CHAIN ADDRESS
+-----------------------
+mchain: getnewaddress MSRCHAIN
+{"method":"getnewaddress","params":["MSRCHAIN"],"id":1,"chain_name":"mchain"}
+
+1YcMBHVAx3wPWN71NMm5QMGUunLAapuJTCVovV
+mchain: grant 1YcMBHVAx3wPWN71NMm5QMGUunLAapuJTCVovV send,receive
+{"method":"grant","params":["1YcMBHVAx3wPWN71NMm5QMGUunLAapuJTCVovV","send,receive"],"id":1,"chain_name":"mchain"}
+
+f748d2ea6bef1be559dd871851efe76a2c032cfe6982e1176363613ac79db82d
+mchain: 
+
+-===== UPDATE mchainENtiy table-----  
+
+This address is for addding the chain.lst files for MSR
+sqlite> .schema mchainEntity
+CREATE TABLE mchainEntity (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, EntityType ,Name, mchainAddress);
+sqlite> insert into mchainEntity values (null,"MSR","MSRCHAIN","1YcMBHVAx3wPWN71NMm5QMGUunLAapuJTCVovV");
+sqlite> 
+
+
+Sample: ./sendwithmetadatafrom.py -b 1YcMBHVAx3wPWN71NMm5QMGUunLAapuJTCVovV -c 1YcMBHVAx3wPWN71NMm5QMGUunLAapuJTCVovV -f msrchain1.lst
+
+
+sendwithmetadata -b chainaddress -c chainaddress -f mortgagefiles.lst
+
+CREATE ADDRESS for MSRCITI:
+---------------------------
+	mchain: getnewaddress MSRCITI                                                                                    
+	{"method":"getnewaddress","params":["MSRCITI"],"id":1,"chain_name":"mchain"}
+
+	1aQRdpkRv7PhxoCHzCS316LRsmVDaWvg7zftHP
+	Grant Permission
+		mchain: grant 1aQRdpkRv7PhxoCHzCS316LRsmVDaWvg7zftHP send,receive                      
+		{"method":"grant","params":["1aQRdpkRv7PhxoCHzCS316LRsmVDaWvg7zftHP","send,receive"],"id":1,"chain_name":"mchain"}
+
+		9c62484493370236a8c16d5edebe297797769f264d9125a59c9127841bcd1373
+		mchain: 
+
+
+Update mchainDB
+	sqlite> insert into mchainEntity values (null,"MSR", "MSRCITI","1aQRdpkRv7PhxoCHzCS316LRsmVDaWvg7zftHP");
+----------
+
+
+THIS IS THE ADDRESS FOR THE BANKCITI used for uploading the customer files in the chain/
+
+
+Sample:
+
+root@mphstellar:
+/home/sanjeev/POC/DocRepo# ./sendwithmetadatafrom.py -b 1aQRdpkRv7PhxoCHzCS316LRsmVDaWvg7zftHP -c 1bX4BXm2BVCkraEnNJvgQv4iecKhbUD8mLysXA  -f Dawne1citi.xml
+
+
+
+--- sendwithmetadata -b bankaddress -c customeraddress -f xmlfilename
+
+Create User id for Dawne.
+-------------------------
+	mchain: getnewaddress DawneCiti                                                   
+	{"method":"getnewaddress","params":["DawneCiti"],"id":1,"chain_name":"mchain"}
+
+	1bX4BXm2BVCkraEnNJvgQv4iecKhbUD8mLysXA
+		Grant Permissions : 
+				mchain: grant 18mdwHqSUu2a4P7JnCeUQGkTd3cDtasXqQmiHf send,receive                      
+				{"method":"grant","params":["18mdwHqSUu2a4P7JnCeUQGkTd3cDtasXqQmiHf","send,receive"],"id":1,"chain_name":"mchain"}
+	
+				991d0a6381cf23103b761ac0a280c013840ca39a9a5f0de5df1a35493072d341
+
+
+Create address for Roy:
+-----------------------
+	mchain: getnewaddress RoyCiti  
+	{"method":"getnewaddress","params":["RoyCiti"],"id":1,"chain_name":"mchain"}
+
+	18mdwHqSUu2a4P7JnCeUQGkTd3cDtasXqQmiHf
+		GRANT PERMISSION:
+			mchain: grant 18mdwHqSUu2a4P7JnCeUQGkTd3cDtasXqQmiHf send,receive                      
+			{"method":"grant","params":["18mdwHqSUu2a4P7JnCeUQGkTd3cDtasXqQmiHf","send,receive"],"id":1,"chain_name":"mchain"}
+	
+			991d0a6381cf23103b761ac0a280c013840ca39a9a5f0de5df1a35493072d341
+
+
+
+
+Step 1:  Upload TXN1 for Dawne1 ( CITIAddress to Dawne ADdress)  -- Upload to DB with Txn status.
+			root@mphstellar:/home/sanjeev/POC/DocRepo# ./sendwithmetadatafrom.py -b 1aQRdpkRv7PhxoCHzCS316LRsmVDaWvg7zftHP  -c 										1bX4BXm2BVCkraEnNJvgQv4iecKhbUD8mLysXA -f DawneMsr1.xml  
+
+		======================================
+		Result = 
+		{u'id': u'1469512918.2-975707', u'result': u'c1b8cc7aa176e9eb5bb18ab5e6a3d15028530c7d3fe55c3b3c9c94c8ddb5cdb3', u'error': None}
+		c1b8cc7aa176e9eb5bb18ab5e6a3d15028530c7d3fe55c3b3c9c94c8ddb5cdb3
+		SendwithmetadataFrom 
+		{'txid': 'c1b8cc7aa176e9eb5bb18ab5e6a3d15028530c7d3fe55c3b3c9c94c8ddb5cdb3'}
+		TxID: c1b8cc7aa176e9eb5bb18ab5e6a3d15028530c7d3fe55c3b3c9c94c8ddb5cdb3
+
+		sqlite> insert into msrChainTransactions values (null,"c1b8cc7aa176e9eb5bb18ab5e6a3d15028530c7d3fe55c3b3c9c94c8ddb5cdb3","CITI","1aQRdpkRv7PhxoCHzCS316LRsmVDaWvg7zftHP","Dawne","1bX4BXm2BVCkraEnNJvgQv4iecKhbUD8mLysXA","01-Sep-2015 11:00:00");
+
+		sqlite> insert into msrCustomerHistory values (null,"c1b8cc7aa176e9eb5bb18ab5e6a3d15028530c7d3fe55c3b3c9c94c8ddb5cdb3","Dawne","1bX4BXm2BVCkraEnNJvgQv4iecKhbUD8mLysXA","File for Servicing Received","01-Sep-2015 11:00:00");
+
+
+
+
+     2: upload txn2 for dawne   - Upload to DB with txn status
+		root@mphstellar:/home/sanjeev/POC/DocRepo# ./sendwithmetadatafrom.py -b 1aQRdpkRv7PhxoCHzCS316LRsmVDaWvg7zftHP  -c 1bX4BXm2BVCkraEnNJvgQv4iecKhbUD8mLysXA -f DawneMsr2.xml  
+
+
+		======================================
+		Result = 
+		{u'id': u'1469514155.45-456928', u'result': u'e312714325351521a574f526200fb5f0f80096d031f33fddfe7d77a09fcb4f75', u'error': None}
+		e312714325351521a574f526200fb5f0f80096d031f33fddfe7d77a09fcb4f75
+		SendwithmetadataFrom 
+		{'txid': 'e312714325351521a574f526200fb5f0f80096d031f33fddfe7d77a09fcb4f75'}
+		TxID: e312714325351521a574f526200fb5f0f80096d031f33fddfe7d77a09fcb4f75
+
+				sqlite> insert into msrChainTransactions values (null,"e312714325351521a574f526200fb5f0f80096d031f33fddfe7d77a09fcb4f75","CITI","1aQRdpkRv7PhxoCHzCS316LRsmVDaWvg7zftHP","Dawne","1bX4BXm2BVCkraEnNJvgQv4iecKhbUD8mLysXA","01-Sep-2015 17:00:00");
+				sqlite> insert into msrCustomerHistory values (null,"e312714325351521a574f526200fb5f0f80096d031f33fddfe7d77a09fcb4f75","Dawne","1bX4BXm2BVCkraEnNJvgQv4iecKhbUD8mLysXA","Compliance Checklist Completed","01-Sep-2015 17:00:00");
+
+
+     
+Step 3. Create msrchainlist1.lst file with 2 txns
+
+		cat msrChaintxn1.lst 
+1|c1b8cc7aa176e9eb5bb18ab5e6a3d15028530c7d3fe55c3b3c9c94c8ddb5cdb3|CITI|1aQRdpkRv7PhxoCHzCS316LRsmVDaWvg7zftHP|Dawne|1bX4BXm2BVCkraEnNJvgQv4iecKhbUD8mLysXA|01-Sep-2015 11:00:00|
+2|e312714325351521a574f526200fb5f0f80096d031f33fddfe7d77a09fcb4f75|CITI|1aQRdpkRv7PhxoCHzCS316LRsmVDaWvg7zftHP|Dawne|1bX4BXm2BVCkraEnNJvgQv4iecKhbUD8mLysXA|01-Sep-2015 17:00:00|
+
+
+		root@mphstellar:/home/sanjeev/POC/DocRepo# ./sendwithmetadatafrom.py -b 1YcMBHVAx3wPWN71NMm5QMGUunLAapuJTCVovV -c 1YcMBHVAx3wPWN71NMm5QMGUunLAapuJTCVovV -f msrChaintxn1.lst 
+		======================================
+		Result = 
+		{u'id': u'1469515662.24-901343', u'result': u'c11943aaa9d466361c16dfacedbc8d76de07800ea9277ed1da2b75a204e981fd', u'error': None}
+		c11943aaa9d466361c16dfacedbc8d76de07800ea9277ed1da2b75a204e981fd
+		SendwithmetadataFrom 
+		{'txid': 'c11943aaa9d466361c16dfacedbc8d76de07800ea9277ed1da2b75a204e981fd'}
+		TxID: c11943aaa9d466361c16dfacedbc8d76de07800ea9277ed1da2b75a204e981fd
+
+
+ 
+Step 4.  upload txn3 for dawne 
+
+		root@mphstellar:/home/sanjeev/POC/DocRepo# ./sendwithmetadatafrom.py -b 1aQRdpkRv7PhxoCHzCS316LRsmVDaWvg7zftHP  -c 1bX4BXm2BVCkraEnNJvgQv4iecKhbUD8mLysXA -f DawneMsr3.xml  
+
+		======================================
+		Result = 
+		{u'id': u'1469516502.78-890113', u'result': u'37a2987995a2ca26d7d3c485c5fd5cb9a2e9ee947ea5a6c1f0841e84d59d4024', u'error': None}
+		37a2987995a2ca26d7d3c485c5fd5cb9a2e9ee947ea5a6c1f0841e84d59d4024
+		SendwithmetadataFrom 
+		{'txid': '37a2987995a2ca26d7d3c485c5fd5cb9a2e9ee947ea5a6c1f0841e84d59d4024'}
+		TxID: 37a2987995a2ca26d7d3c485c5fd5cb9a2e9ee947ea5a6c1f0841e84d59d4024
+
+		sqlite> insert into msrCustomerHistory values (null,"37a2987995a2ca26d7d3c485c5fd5cb9a2e9ee947ea5a6c1f0841e84d59d4024","Dawne","1bX4BXm2BVCkraEnNJvgQv4iecKhbUD8mLysXA","Service Transfer Completed","03-Sep-2015 11:00:00");
+		sqlite> insert into msrChainTransactions values (null,"37a2987995a2ca26d7d3c485c5fd5cb9a2e9ee947ea5a6c1f0841e84d59d4024","CITI","1aQRdpkRv7PhxoCHzCS316LRsmVDaWvg7zftHP","Dawne","1bX4BXm2BVCkraEnNJvgQv4iecKhbUD8mLysXA","03-Sep-2015 11:00:00");
+
+
+     5. upoad txn4 for dawne.
+		root@mphstellar:/home/sanjeev/POC/DocRepo# ./sendwithmetadatafrom.py -b 1aQRdpkRv7PhxoCHzCS316LRsmVDaWvg7zftHP  -c 1bX4BXm2BVCkraEnNJvgQv4iecKhbUD8mLysXA -f DawneMsr4-Installment.xml
+
+		======================================
+		Result = 
+		{u'id': u'1469516787.6-991061', u'result': u'9860778b7adac33b84acaae6464ac6ef690b3063b9a95c9bdbe2fef878b28cb7', u'error': None}
+		9860778b7adac33b84acaae6464ac6ef690b3063b9a95c9bdbe2fef878b28cb7
+		SendwithmetadataFrom 
+		{'txid': '9860778b7adac33b84acaae6464ac6ef690b3063b9a95c9bdbe2fef878b28cb7'}
+		TxID: 9860778b7adac33b84acaae6464ac6ef690b3063b9a95c9bdbe2fef878b28cb7
+	
+		
+
+step 6.  create msrchainlist2.lst file with 2 txns.
+
+		sanjeev@mphstellar:/opt/mchain/cgi/data$ cat msrChaintxn2.lst 
+1|37a2987995a2ca26d7d3c485c5fd5cb9a2e9ee947ea5a6c1f0841e84d59d4024|CITI|1aQRdpkRv7PhxoCHzCS316LRsmVDaWvg7zftHP|Dawne|1bX4BXm2BVCkraEnNJvgQv4iecKhbUD8mLysXA|03-Sep-2015 11:00:00|
+2|9860778b7adac33b84acaae6464ac6ef690b3063b9a95c9bdbe2fef878b28cb7|CITI|1aQRdpkRv7PhxoCHzCS316LRsmVDaWvg7zftHP|Dawne|1bX4BXm2BVCkraEnNJvgQv4iecKhbUD8mLysXA|15-Sep-2015 11:00:00|
+
+    		root@mphstellar:/home/sanjeev/POC/DocRepo# ./sendwithmetadatafrom.py -b 1YcMBHVAx3wPWN71NMm5QMGUunLAapuJTCVovV -c 1YcMBHVAx3wPWN71NMm5QMGUunLAapuJTCVovV -f msrChaintxn2.lst 
+
+		======================================
+		Result = 
+		{u'id': u'1469517025.19-318272', u'result': u'b3aa794ec6693847ea15b50499f9be24066f0d97d9284d27473d28db10970e74', u'error': None}
+		b3aa794ec6693847ea15b50499f9be24066f0d97d9284d27473d28db10970e74
+		SendwithmetadataFrom 
+		{'txid': 'b3aa794ec6693847ea15b50499f9be24066f0d97d9284d27473d28db10970e74'}
+		TxID: b3aa794ec6693847ea15b50499f9be24066f0d97d9284d27473d28db10970e74
+
+
+
+
+
+
+

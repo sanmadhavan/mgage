@@ -1,0 +1,53 @@
+Monica Transactions : Monica1.xml
+
+CITI|1ECu1vm9DTfbDPTFs1CNa8AQYjzZ3c9sjk4Y6k
+Monica:
+
+mchain: getnewaddress Monica_CITI
+{"method":"getnewaddress","params":["Monica_CITI"],"id":1,"chain_name":"mchain"}
+
+1WUMrRzMmqBo2PbGgs6LfiNaXiR2i474T8Yrd6
+-------------------------
+mchain: grant 1WUMrRzMmqBo2PbGgs6LfiNaXiR2i474T8Yrd6 send,receive
+{"method":"grant","params":["1WUMrRzMmqBo2PbGgs6LfiNaXiR2i474T8Yrd6","send,receive"],"id":1,"chain_name":"mchain"}
+
+478961b50638213d6e5c57ac125664419e54359f9af772ab94053d7e84be6d34
+
+
+sqlite> insert into MortgageAccounts values (null, "CITI", "Monica" ,"1WUMrRzMmqBo2PbGgs6LfiNaXiR2i474T8Yrd6");
+
+CITI: 1ECu1vm9DTfbDPTFs1CNa8AQYjzZ3c9sjk4Y6k Monica : 1WUMrRzMmqBo2PbGgs6LfiNaXiR2i474T8Yrd6 File : Monica1.xml
+
+./sendwithmetadatafrom.py -b 1ECu1vm9DTfbDPTFs1CNa8AQYjzZ3c9sjk4Y6k -c 1WUMrRzMmqBo2PbGgs6LfiNaXiR2i474T8Yrd6 -f Monica1.xml 
+	Result = 
+	{u'id': u'1465821578.75-926070', u'result': u'13c48a076ca9e7e074398fcb463805902e2729816c6725cdaaed20ca3981b966', u'error': None}
+	13c48a076ca9e7e074398fcb463805902e2729816c6725cdaaed20ca3981b966
+	SendwithmetadataFrom 
+	{'txid': '13c48a076ca9e7e074398fcb463805902e2729816c6725cdaaed20ca3981b966'}
+	TxID: 13c48a076ca9e7e074398fcb463805902e2729816c6725cdaaed20ca3981b966
+
+
+insert into mortgageChainTransactions  values (null , "13c48a076ca9e7e074398fcb463805902e2729816c6725cdaaed20ca3981b966","CITI","1ECu1vm9DTfbDPTFs1CNa8AQYjzZ3c9sjk4Y6k","Monica","1WUMrRzMmqBo2PbGgs6LfiNaXiR2i474T8Yrd6","21-May-2014 10:10:00");
+
+
+insert into mortgageCustomerHistory values (null, "13c48a076ca9e7e074398fcb463805902e2729816c6725cdaaed20ca3981b966","Monica","1WUMrRzMmqBo2PbGgs6LfiNaXiR2i474T8Yrd6","Loan Initiated","21-May-2014 10:10:00");
+
+
+===================
+ADD this to a separate chain
+
+mortgageChainTxn3.lst
+1|13c48a076ca9e7e074398fcb463805902e2729816c6725cdaaed20ca3981b966|CITI|1ECu1vm9DTfbDPTFs1CNa8AQYjzZ3c9sjk4Y6k|Monica|1WUMrRzMmqBo2PbGgs6LfiNaXiR2i474T8Yrd6|21-May-2014 10:10:00
+
+
+Add these to main Mortgage chain
+
+./sendwithmetadatafrom.py -b 1UALod2okBiG3Ccd81MEFcki9RkiPihts4nxfj -c 1UALod2okBiG3Ccd81MEFcki9RkiPihts4nxfj -f mortgageChainTxn3.lst
+
+		Result = 
+		{u'id': u'1465822167.27-856646', u'result': u'00094eca8277887d1c172acdb9b6e1a6536844ff03578617177553fbd27bfa0c', u'error': None}
+		00094eca8277887d1c172acdb9b6e1a6536844ff03578617177553fbd27bfa0c
+		SendwithmetadataFrom 
+		{'txid': '00094eca8277887d1c172acdb9b6e1a6536844ff03578617177553fbd27bfa0c'}
+		TxID: 00094eca8277887d1c172acdb9b6e1a6536844ff03578617177553fbd27bfa0c
+

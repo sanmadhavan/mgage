@@ -1,0 +1,1000 @@
+ 1013  sudo stop network-manager
+ 1014  ifconfig 
+ 1015  ifconfig eth0 192.168.100.1 netmask 255.255.255.0 
+ 1016  ifconfig 
+ 1017  ping 192.168.100.20
+ 1018  sysctl -a | grep forward
+ 1019  cat /proc/sys/net/ipv4/ip_forward
+ 1020  iptables -L | grep MASQUERADE
+ 1021  iptables -t nat -A POSTROUTING -o ppp0 -j MASQUERADE
+ 1022  iptables -A FORWARD -i eth0 -o ppp0 -m state --state RELATED,ESTABLISHED -j ACCEPT
+ 1023  iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+ 1024  ifconfig 
+ 1025  history
+ 1026  iptables -A FORWARD -i eth0 -o ppp0 -j ACCEPT
+ 1027  iptables -L | grep MASQUERADE
+ 1028  iptables -L
+ 1029  history
+ 1030  iptables -t nat -A POSTROUTING -o ppp0 -j MASQUERADE
+ 1031  iptables -A FORWARD -i eth0 -o ppp0 -m state --state RELATED,ESTABLISHED -j ACCEPT
+ 1032  iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+ 1033  ifconfig 
+ 1034  service isc-dhcp-server status
+ 1035  service isc-dhcp-server start
+ 1036  cat /etc/dhcp/dhcpd.conf
+ 1037  cat /etc/dhcp/dhcpd.conf | grep -v ^@
+ 1038  cat /etc/dhcp/dhcpd.conf | grep -v ^#
+ 1039  poweroff
+ 1040  ifconfig 
+ 1041  history 
+ 1042  ifconfig eth0 192.168.100.1 netmask 255.255.255.0
+ 1043  ifconfig 
+ 1044  telnet 192.168.100.21 8000
+ 1045  dmesg 
+ 1046  ifconfig 
+ 1047  tail /var/log/syslog
+ 1048  tail /var/log/syslog -f
+ 1049  cat setNetwork 
+ 1050  start network-manager 
+ 1051  tail /var/log/syslog -f
+ 1052  ifconfig 
+ 1053  ping yahoo.com
+ 1054  dmesg
+ 1055  tail -f /var/log/syslog
+ 1056  stop network-manager 
+ 1057  tail -f /var/log/syslog
+ 1058  cd /usr/include/
+ 1059  ls -ltr
+ 1060  find . | grep ssl
+ 1061  find . | grep crypto
+ 1062  cd ~
+ 1063  ls -ltr
+ 1064  cd Filter-Crypto-2.07/
+ 1065  ls -ltr 
+ 1066  perl Makefile.PL 
+ 1067  ld openssl
+ 1068  ldd openssl
+ 1069  ldd /usr/bin/openssl 
+ 1070  perl Makefile.PL 
+ 1071  cd ../
+ 1072  ls
+ 1073  pwd
+ 1074  cd /home/sanjeev/Downloads/
+ 1075  ls -ltr
+ 1076  ls -ltr ../
+ 1077  rpm -ivh ../libxml2-2.7.2-1.x86_64.rpm 
+ 1078  apt-get install libxmls
+ 1079  apt-get install libxml2
+ 1080  ls -ltr
+ 1081  scp Ethereum-Wallet-linux64-0-7-1.zip raja@192.168.100.21:/home/raja/Downloads
+ 1082  ls -ltr
+ 1083  ping yahoo.com
+ 1084  ifconfig 
+ 1085  ping yahoo.com
+ 1086  kill -9 7614
+ 1087  ls -lr
+ 1088  ps ef | grep abe
+ 1089  ps ef | grep python
+ 1090  wpd
+ 1091  pwd
+ 1092  cd /var/log/apache2/
+ 1093  ls -ltr
+ 1094  tail access.log 
+ 1095  tail error.log 
+ 1096  tail -f error.log 
+ 1097  hostname
+ 1098  hostname -f
+ 1099  cat /etc/hosts
+ 1100  hostname
+ 1101  ifconfig 
+ 1102  view /etc/apache2/apache2.conf 
+ 1103  view /etc/apache2/conf-available/servername.conf
+ 1104  ping yahoo.com
+ 1105  ifconfig 
+ 1106  ifconfig eth0
+ 1107  ifconfig eth0 
+ 1108  ifconfig eth0 192.168.1.2 netmask 255.255.255.0
+ 1109  ifconfig eth0 
+ 1110  ping 192.168.1.1
+ 1111  ifconfig eth0 192.168.0.2 netmask 255.255.255.0
+ 1112  ping 192.168.0.1
+ 1113  ifconfig 
+ 1114  ifconfig eth0 192.168.0.2 netmask 255.255.255.0
+ 1115  ifconfig 
+ 1116  ping 192.168.0.1
+ 1117  ifconfig 
+ 1118  ifconfig eth0 down
+ 1119  ifconfig eth0 up
+ 1120  ifconfig 
+ 1121  ifconfig eth0 down
+ 1122  ifconfig eth0 up
+ 1123  ifconfig 
+ 1124  ping yahoo.com
+ 1125  ls -ltr
+ 1126  cd /home/sanjeev/POC/
+ 1127  ls 0ktr
+ 1128  ls -ltr
+ 1129  cd DocRepo/
+ 1130  ls -ltr
+ 1131  cd ..
+ 1132  cd data/
+ 1133  ls -ltr
+ 1134  cat setNetwork 
+ 1135  sudo stop network-manager
+ 1136  ifconfig 
+ 1137  ifconfig eth0 192.168.100.1 netmask 255.255.255.0
+ 1138  service isc-dhcp-server start
+ 1139  iptables -t nat -A POSTROUTING -o ppp0 -j MASQUERADE
+ 1140  iptables -A FORWARD -i eth0 -o ppp0 -m state --state RELATED,ESTABLISHED -j ACCEPT
+ 1141  iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+ 1142  ufw  status
+ 1143  ufw disable
+ 1144  ufw  status
+ 1145  ls -ltr 
+ 1146  ifconfig 
+ 1147  ls -tlr
+ 1148  ifconfig 
+ 1149  pwd
+ 1150  ls -ltr
+ 1151  cat setNetwork 
+ 1152  ifconfig 
+ 1153  ifconfig eth0 down
+ 1154  ls -ltr
+ 1155  ifconfig 
+ 1156  cat setNetwork 
+ 1157  start network-manager 
+ 1158  ifconfig 
+ 1159  stop network-manager 
+ 1160  ifconfig 
+ 1161  start network-manager 
+ 1162  ifconfig 
+ 1163  route -m
+ 1164  route -n
+ 1165  ifconfig 
+ 1166  cat setNetwork 
+ 1167  stop network-manager 
+ 1168  service isc-dhcp-server stop
+ 1169  ufw disable 
+ 1170  ifconfig 
+ 1171  ifconfig eth0 up
+ 1172  ifconfig 
+ 1173  start network-manager 
+ 1174  ifconfig 
+ 1175  route -n
+ 1176  ping yahoo.cp
+ 1177  ping yahoo.com
+ 1178  route -n
+ 1179  ifconfig docker0 down
+ 1180  ifconfig br-57981ee7d4d4 down
+ 1181  ifconfig 
+ 1182  route -n
+ 1183  ping yahoo.com
+ 1184  ping 192.168.1.251
+ 1185  ping yahoo.com
+ 1186  ifconfig 
+ 1187  ifconfig eth0 down
+ 1188  ifconfig 
+ 1189  ifconfig eth0 up
+ 1190  ifconfig 
+ 1191  route -n
+ 1192  cat /etc/resolv.conf 
+ 1193  cat /etc/resolvconf/interface-order 
+ 1194  cat /etc/resolvconf/resolv.conf.d/base 
+ 1195  cat /etc/hosts
+ 1196  cat /etc/hostname 
+ 1197  ifconfig 
+ 1198  route -n
+ 1199  ifconfig 
+ 1200  ping yahoo.com
+ 1201  cat /etc/resolv.conf 
+ 1202  vi /etc/resolv.conf 
+ 1203  ping yahoo.com
+ 1204  cat /etc/resolv.conf 
+ 1205  ping 192.168.1.251
+ 1206  ping yahoo.com
+ 1207  ssh 192.168.1.251
+ 1208  cat setNetwork 
+ 1209  sudo stop network-manager
+ 1210  ifconfig eth0 192.168.100.1 netmask 255.255.255.0
+ 1211  service isc-dhcp-server start
+ 1212  iptables -t nat -A POSTROUTING -o ppp0 -j MASQUERADE
+ 1213  iptables -A FORWARD -i eth0 -o ppp0 -m state --state RELATED,ESTABLISHED -j ACCEPT
+ 1214  iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+ 1215  ufw disable
+ 1216  ifconfig 
+ 1217  start network-manager
+ 1218  ifconfig 
+ 1219  ping yahoo.com
+ 1220  cat setNetwork 
+ 1221  ifconfig eth0 down
+ 1222  ifconfig eth0 up
+ 1223  ifconfig 
+ 1224  cat setNetwork 
+ 1225  stop network-manager 
+ 1226  service isc-dhcp-server stop
+ 1227  ufw disable 
+ 1228  start network-manager 
+ 1229  ifconfig 
+ 1230  ping yahoo.com
+ 1231  ifconfig 
+ 1232  ifconfig wlan0 up
+ 1233  ifconfig wlan0
+ 1234  ifconfig 
+ 1235  ifconfig eth0 down
+ 1236  ifconfig eth0 up
+ 1237  ifconfig 
+ 1238  ifconfig eth0 down
+ 1239  ifconfig 
+ 1240  ifconfig eth0 up
+ 1241  ifconfig 
+ 1242  route -n
+ 1243  ifconfig 
+ 1244  ping 192.168.1.1
+ 1245  ifconfig 
+ 1246  ifconfig eth0 down
+ 1247  ifconfig eth0 up
+ 1248  route -n
+ 1249  ifconfig eth0 up
+ 1250  ifconfig 
+ 1251  ifconfig eth0 up
+ 1252  ifconfig 
+ 1253  route -n
+ 1254  ping yahoo.com
+ 1255  ifconfig eth0 down
+ 1256  ifconfig 
+ 1257  ifconfig eth0 up
+ 1258  ifconfig 
+ 1259  route -n
+ 1260  ifconfig eth0 down
+ 1261  ifconfig eth0 up
+ 1262  route -n
+ 1263  ping yahoo.com
+ 1264  ifconfig 
+ 1265  ping yahoo.com
+ 1266  ls -ltr
+ 1267  ps -ef | grep apache
+ 1268  cd /opt/mchain/cgi/data/
+ 1269  vi loanfile.xml 
+ 1270  cd ..
+ 1271  python loanFileParser.py 
+ 1272  vi data/loanfile.xml 
+ 1273  python loanFileParser.py 
+ 1274  vi data/loanfile.xml 
+ 1275  python loanFileParser.py 
+ 1276  ls -ltr
+ 1277  cat loanForm.cgi 
+ 1278  ls -ltr
+ 1279  cat loanTransactions.cgi 
+ 1280  cat loanFiles.cgi 
+ 1281  vi loanFiles.cgi 
+ 1282  cd /opt/mchain/cgi/
+ 1283  vi sample.py
+ 1284  vi mylogin.cgi
+ 1285  chmod +x mylogin.cgi 
+ 1286  ./mylogin.cgi 
+ 1287  vi mylogin.cgi
+ 1288  ./mylogin.cgi 
+ 1289  vi mylogin.cgi
+ 1290  ./mylogin.cgi 
+ 1291  vi mylogin.cgi
+ 1292  ./mylogin.cgi 
+ 1293  vi mylogin.cgi
+ 1294  ./mylogin.cgi 
+ 1295  ls -ltr
+ 1296  vi mylogin.cgi
+ 1297  chmod +x sample.py 
+ 1298  ./sample.py 
+ 1299  vi sample.py 
+ 1300  ./sample.py 
+ 1301  vi sample.py 
+ 1302  ./sample.py 
+ 1303  cat sample.py 
+ 1304  cat mylogin.cgi 
+ 1305  ./login-action.py
+ 1306  ls -ltr
+ 1307  vi adminDocList.html 
+ 1308  ls -ltr
+ 1309  scp mchain-login.cgi raja@192.168.100.21/opt/mchain/cgi/
+ 1310  scp mchain-login.cgi raja@192.168.100.21:/opt/mchain/cgi/
+ 1311  scp mchain-login.cgi root@192.168.100.21:/opt/mchain/cgi/
+ 1312  scp mchain-login.cgi raja@192.168.100.21:/tmp/
+ 1313  scp login-action.py raja@192.168.100.21:/tmp/
+ 1314  scp mylogin.cgi  raja@192.168.100.21:/tmp/
+ 1315  scp htmlElements.py  raja@192.168.100.21:/tmp/
+ 1316  ping yahoo.com
+ 1317  ifconfig 
+ 1318  ping yahoo.com
+ 1319  cp mylogin.cgi btransactions.cgi
+ 1320  vi btransactions.cgi 
+ 1321  l -ltr
+ 1322  ls -ltr
+ 1323  cp loanTransactions.cgi maintemplate.cgi
+ 1324  vi loanTransactions.cgi 
+ 1325  cd data/
+ 1326  ls -ltr
+ 1327  cat 1863058dad600fb915b808f7c1d68d0b8d45d913928909e72ef011d3fce1a9e0.lst 
+ 1328  vi fef734c4b8373252ac3a68d61858bd04771f66cb366ca44aad4e987b91aa5055.txt
+ 1329  vi loanfile.xml
+ 1330  vi test
+ 1331  vi ../loanTransactions.cgi 
+ 1332  vi ../btransactions.cgi 
+ 1333  cd 
+ 1334  cd -
+ 1335  cd ..
+ 1336  ls -ltr
+ 1337  python htmlElements.py
+ 1338  ./updatemChain.cgi 
+ 1339  ls -ltr
+ 1340  cd ..
+ 1341  ls -ltr
+ 1342  tar cvzf may23-cgi.tar.gz cgi/
+ 1343  ls -ltr cgi/data/
+ 1344  cd cgi/
+ 1345  ls -ltr
+ 1346  grep loanFiles.cgi *
+ 1347  grep loanTransactions.cgi.cgi *
+ 1348  grep loanTransactions.cgi *
+ 1349  view loanTransactions.cgi 
+ 1350  cd /opt/mchain/cgi/
+ 1351  chmod +x loanTransactions.cgi 
+ 1352  ls -ltr
+ 1353  vi test.txt
+ 1354  vi data/btransactions.lst 
+ 1355  ./btransactions.cgi 
+ 1356  vi btransactions.cgi 
+ 1357  ./loanTransactions.cgi 
+ 1358  ./loanTransactions.cgi?txid=1863058dad600fb915b808f7c1d68d0b8d45d913928909e72ef011d3fce1a9e0
+ 1359  ./loanTransactions.cgi?
+ 1360  ./loanTransactions.cgi
+ 1361  view btransactions.cgi 
+ 1362  view loanFiles.cgi 
+ 1363  grep form-horizontal *
+ 1364  grep form-horizontal * -r
+ 1365  vi css/bootstrap.min.css:
+ 1366  ls -ltr
+ 1367  vi css/bootstrap.min.css 
+ 1368  vi css/blockchain.css 
+ 1369  ./updatemChain.cgi 
+ 1370  vi test
+ 1371  ls -ltr
+ 1372  vi loanFileParser.py 
+ 1373  ls -ltr
+ 1374  vgrep ET *
+ 1375  grep ET *
+ 1376  cd /opt/mchain/cgi/
+ 1377  vi htmlElements.py
+ 1378  ifconfig 
+ 1379  ping yahoo.com
+ 1380  ifconfig ppp0 down
+ 1381  ifconfig 
+ 1382  ifconfig ppp0
+ 1383  ifconfig ppp0 down
+ 1384  mount
+ 1385  tail /var/log/syslog
+ 1386  tail /var/log/syslog -f
+ 1387  ping yahoo.com
+ 1388  cd /var/www/cgi-bin/
+ 1389  vi test.pl
+ 1390  chmod +x test.pl 
+ 1391  ./test.pl 
+ 1392  cd /
+ 1393  ls -ltr
+ 1394  cd opt/
+ 1395  ls -ltr
+ 1396  mkdir bchain
+ 1397  cd bchain/
+ 1398  ls -ltr
+ 1399  mkdir cgi
+ 1400  cd cgi/
+ 1401  ls -ltr
+ 1402  vi test.htm
+ 1403  vi test.html
+ 1404  cp /home/sanjeev/Downloads/bootstrap-3.3.6-dist/* -r .
+ 1405  ls -ltr
+ 1406  chmod +x test.html 
+ 1407  pwd
+ 1408  cd /var/www/html/
+ 1409  ls -ltr
+ 1410  cp /opt/bchain/cgi/test.html .
+ 1411  cp /home/sanjeev/Downloads/bootstrap-3.3.6-dist/* -r .
+ 1412  ls -ltr
+ 1413  cat index.cgi 
+ 1414  cd ../cgi-bin/
+ 1415  ls -ltr
+ 1416  cat index.cgi 
+ 1417  service apache2 restart
+ 1418  cd /opt/mchain/cgi/
+ 1419  ls -lr
+ 1420  chmod +x login.cgi 
+ 1421  ./login.cgi 
+ 1422  cp /home/sanjeev/html-files/block\ chain/* . -r
+ 1423  ls -lr
+ 1424  ./login.cgi 
+ 1425  ls -ltr
+ 1426  ./login.cgi 
+ 1427  ls -ltr
+ 1428  chmod 655 css/
+ 1429  ls-ltr
+ 1430  ls -ltr
+ 1431  chmod 655 css/*
+ 1432  chmod 655 images/*
+ 1433  chmod 655 images/
+ 1434  chmod 655 font/
+ 1435  chmod 655 font/*
+ 1436  ls -ltr images/
+ 1437  ls -ltr images/mphasis_logo.png 
+ 1438  chmod 777 images/
+ 1439  chmod 777 images/*
+ 1440  chmod 777 css/*
+ 1441  chmod 777 css/
+ 1442  ls -ltr 
+ 1443  chmod 777 font/*
+ 1444  ls -ltr
+ 1445  chmod 777 font/
+ 1446  ls ltr
+ 1447  ls -ltr
+ 1448  ./login.cgi 
+ 1449  sl -ltr images/mphasis_logo.png 
+ 1450  ls -ltr images/mphasis_logo.png 
+ 1451  ./login.cgi 
+ 1452  cp images/mphasis_logo.png .
+ 1453  history | grep apache
+ 1454  cp login.cgi mchain-login.cgi
+ 1455  vi mchain-login.cgi 
+ 1456  vi login-action.py
+ 1457  cp login-action.py login-action.py.dbg
+ 1458  vi login-action.py
+ 1459  ls -ltr
+ 1460  cp maintemplate.cgi loanForm.cgi
+ 1461  vi loanForm.cgi 
+ 1462  cd ,,
+ 1463  cd /var/www/html/
+ 1464  ls -ltr
+ 1465  mv bs-siminta-admin/ bchain
+ 1466  cd bchain/
+ 1467  ls -ltr
+ 1468  grep bs-simi * 
+ 1469  grep bs-simi *  -r
+ 1470  cd ..
+ 1471  mv bchain/ mchain
+ 1472  cd mchain/
+ 1473  vi login.html 
+ 1474  grep SIMINT 8
+ 1475  grep SIMINT *
+ 1476  grep SIMINT * -r
+ 1477  ls -ltr
+ 1478  vi login.html 
+ 1479  cd assets/
+ 1480  ls -ltr
+ 1481  grep SIMIT *
+ 1482  grep SIMIT * -r
+ 1483  grep SIMI * -r
+ 1484  grep SIM * -r
+ 1485  cd ..
+ 1486  ls -ltr
+ 1487  grep SIM * -r
+ 1488  cd -
+ 1489  ls -ltr
+ 1490  cd img/
+ 1491  ls -ltr
+ 1492  mv logo.png logo1.png
+ 1493  ping yahoo.com
+ 1494  cp /home/sanjeev/Documents/logo.png .
+ 1495  ls -ltr
+ 1496  cd ..
+ 1497  ls -ltr
+ 1498  cd css/
+ 1499  ls -ltr
+ 1500  view main-style.css 
+ 1501  grep user *
+ 1502  cd ..
+ 1503  grep user * -r
+ 1504  grep user.png * -r
+ 1505  cd ..
+ 1506  grep user.png * -r
+ 1507  ls -ltr assets/img/
+ 1508  grep user.jpg * -r
+ 1509  vi index.html 
+ 1510  grep Loren *
+ 1511  grep Loren * -r
+ 1512  grep Lorem *
+ 1513  ls -ltr
+ 1514  vi tables.html 
+ 1515  which python
+ 1516  cd /opt/mchain/cgi/
+ 1517  ./login.cgi 
+ 1518  ls -ltr
+ 1519  ./login.cgi 
+ 1520  ls -ltr
+ 1521  cd ../../bchain/cgi/
+ 1522  ls -ltr
+ 1523  cat test.cgi 
+ 1524  cat test.html 
+ 1525  cd /home/sanjeev/POC/DocRepo/
+ 1526  ls -ltr
+ 1527  ls -ltr working/
+ 1528  ls -ltr
+ 1529  ls -ltr encrypt
+ 1530  cd ~
+ 1531  cat setNetwork 
+ 1532  stop network-manager 
+ 1533  ifconfig 
+ 1534  ifconfig eth0 192.168.100.1 netmask 255.255.255.0
+ 1535  service isc-dhcp-server start
+ 1536  iptables -t nat -A POSTROUTING -o ppp0 -j MASQUERADE
+ 1537  iptables -A FORWARD -i eth0 -o ppp0 -m state --state RELATED,ESTABLISHED -j ACCEPT
+ 1538  iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+ 1539  ufw disable
+ 1540  ifconfig 
+ 1541  tail /tmp/mchain.log -f
+ 1542  pwd
+ 1543  cat setNetwork 
+ 1544  start network-manager 
+ 1545  ifconfig 
+ 1546  cat setNetwork 
+ 1547  sudo stop network-manager
+ 1548  ifconfig 
+ 1549  ifconfig eth0 192.168.100.1 netmask 255.255.255.0
+ 1550  service isc-dhcp-server start
+ 1551  iptables -t nat -A POSTROUTING -o ppp0 -j MASQUERADE
+ 1552  iptables -A FORWARD -i eth0 -o ppp0 -m state --state RELATED,ESTABLISHED -j ACCEPT
+ 1553  iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+ 1554  ufw disable
+ 1555  ping yahoo.com
+ 1556  ps -ef | grep pidgin
+ 1557  kill -9 29732
+ 1558  ps -ef | grep pidgin
+ 1559  kill -9 2781
+ 1560  ps -ef | grep pidgin
+ 1561  kill -9 2147
+ 1562  apt install apache2
+ 1563  netstat -nat | grep LISTEN
+ 1564  ls -ltr /etc/apache2/
+ 1565  ls -ltr /etc/apache2/conf-available/serve-cgi-bin.conf 
+ 1566  view /etc/apache2/conf-available/serve-cgi-bin.conf
+ 1567  ls -ltr /var/www/
+ 1568  mkdir /var/www/cgi-bin/
+ 1569  mv /var/www/html/index.cgi /var/www/cgi-bin/
+ 1570  ps -ef | grep http
+ 1571  ps -ef | grep apache
+ 1572  netstat -pnat | grep LISTEN
+ 1573  a2enmod cgi
+ 1574  service apache2 restart
+ 1575  pwd
+ 1576  cp /var/www/cgi-bin/index.cgi /var/www/html/
+ 1577  /usr/sbin/apache2 -V | grep SERVER_CONFIG_FILE
+ 1578  /usr/sbin/apache2 -v
+ 1579  /usr/sbin/apache2 -V
+ 1580  vi /etc/apache2/apache2.conf 
+ 1581  /usr/sbin/apache2 -V
+ 1582  ps -ef | grep apache
+ 1583  ps -eux | grep apache
+ 1584  service apache2 stop
+ 1585  vi /etc/apache2/apache2.conf 
+ 1586  service apache2 start
+ 1587  netstat -pnat | grep LISTEN
+ 1588  sudo apt-get install python3
+ 1589  vi /etc/apache2/apache2.conf 
+ 1590  pwd
+ 1591  vi /etc/apache2/apache2.conf 
+ 1592  ls -ltr /usr/local/apache2/cgi-bin/
+ 1593  mkdir -p /usr/local/apache2/cgi-bin/
+ 1594  cd /usr/local/apache2/cgi-bin/
+ 1595  vi test.cgi
+ 1596  perl test.cgi 
+ 1597  cd ..
+ 1598  ls -ltr
+ 1599  chmod 777 cgi-bin/
+ 1600  ls -ltr /var/www/
+ 1601  chmod 777 /var/www/cgi-bin/
+ 1602  ls -ltr /var/www/
+ 1603  cd /var/www/html/
+ 1604  ls -ltr
+ 1605  mkdir cgi-bin
+ 1606  ls -ltr
+ 1607  cp index.cgi cgi-bin/
+ 1608  rm -rf cgi-bin/
+ 1609  ls -ltr
+ 1610  ./index.cgi 
+ 1611  cd ..
+ 1612  ls -ltr
+ 1613  cd cgi-bin/
+ 1614  ls -ltr
+ 1615  chmod 777 *
+ 1616  vi ../html/index.cgi 
+ 1617  chmod a+x ../html/index.cgi 
+ 1618  vi ../html/index.cgi 
+ 1619  ls -ltr ../html/index.cgi
+ 1620  vi ../html/index.cgi 
+ 1621  vi /etc/apache2/apache2.conf 
+ 1622  sudo a2enmod cgi
+ 1623  vi /etc/apache2/apache2.conf 
+ 1624  vi /etc/apache2/conf-enabled/serve-cgi-bin.conf
+ 1625  vi /etc/apache2/apache2.conf 
+ 1626  sudo a2enmod cgi
+ 1627  service apache2 restart
+ 1628  cat /etc/apache2/conf-enabled/serve-cgi-bin.conf
+ 1629  ls -ltr /usr/lib/cgi-bin/
+ 1630  cp /var/www/html/index.cgi /usr/lib/cgi-bin/
+ 1631  /usr/lib/cgi-bin/index.cgi 
+ 1632  cat /etc/apache2/conf-enabled/serve-cgi-bin.conf
+ 1633  vi /etc/apache2/conf-enabled/serve-cgi-bin.conf
+ 1634  ls -ltr
+ 1635  cp test.pl //opt/bchain/cgi
+ 1636  cat /etc/apache2/conf-enabled/serve-cgi-bin.conf
+ 1637  ls -ltr /opt/bchain/cgi/
+ 1638  mv /opt/bchain/cgi/test.pl /opt/bchain/cgi/test.cgi
+ 1639  /opt/bchain/cgi/test.cgi
+ 1640  service apache2 restart
+ 1641  ls -ltr
+ 1642  cd /opt/bchain/cgi/
+ 1643  ls -ltr
+ 1644  vi /etc/apache2/conf-enabled/serve-cgi-bin.conf
+ 1645  ls -ltr /opt/mchain/cgi/
+ 1646  mkdir -p /opt/mchain/cgi/
+ 1647  cd /opt/mchain/cgi/
+ 1648  ls -lr
+ 1649  vi login.cgi
+ 1650  history | grep apache
+ 1651  cat /etc/apache2/conf-enabled/serve-cgi-bin.conf
+ 1652  cat login.cgi 
+ 1653  vi /etc/apache2/conf-enabled/serve-cgi-bin.conf
+ 1654  service apache2 restart
+ 1655  ls -ltr
+ 1656  vi login.cgi 
+ 1657  vi adminDocList.html 
+ 1658  cat /etc/apache2/conf-enabled/serve-cgi-bin.conf
+ 1659  ifconfig eth0 
+ 1660  ifconfig eth0 up
+ 1661  ifconfig eth0 
+ 1662  route -n
+ 1663  ifconfig eth0 
+ 1664  route -n
+ 1665  ifconfig 
+ 1666  ping yahoo.cm
+ 1667  ping yahoo.com
+ 1668  route -n
+ 1669  ping yahoo.com
+ 1670  ifconfig 
+ 1671  ifconfig wlan0 down
+ 1672  ifconfig 
+ 1673  route -n
+ 1674  ifconfig 
+ 1675  route -n
+ 1676  ifconfig 
+ 1677  route -n
+ 1678  ping yahoo.com
+ 1679  ping google.com
+ 1680  ifconfig 
+ 1681  ifconfig wlan0
+ 1682  ifconfig wlan0 down
+ 1683  ifconfig wlan0 d
+ 1684  ifconfig wlan0
+ 1685  ifconfig wlan0 down
+ 1686  ifconfig wlan0
+ 1687  ifconfig wlan0 
+ 1688  ifconfig 
+ 1689  ping yahoo.com
+ 1690  ifconfig 
+ 1691  route -n
+ 1692  ping yahoo.com
+ 1693  route -n
+ 1694  ifconfig 
+ 1695  route -n
+ 1696  ifconfig wlan0 192.168.0.3 netmask 255.255.255.0
+ 1697  ifconfig 
+ 1698  route -n
+ 1699  ifconfig 
+ 1700  route -n
+ 1701  ping yahoo.com
+ 1702  route add default gw 192.168.0.1
+ 1703  ping yahoo.com
+ 1704  route -n
+ 1705  ping yahoo.com
+ 1706  ping 192.168.0.1
+ 1707  ping yahoo.com
+ 1708  ifconfig 
+ 1709  ifconfig wlan0
+ 1710  route -n
+ 1711  ping yahoo.com
+ 1712  ifconfig 
+ 1713  ping yahoo.com
+ 1714  ifconfig 
+ 1715  ping yahoo.com
+ 1716  ls -ltr
+ 1717  vi mchain-login.cgi 
+ 1718  ./mchain-login.cgi 
+ 1719  chmod +x login-action.py 
+ 1720  ./login-action.py 
+ 1721  ls -ltr
+ 1722  ./login-action.py 
+ 1723  view /etc/apache2/conf-available/serve-cgi-bin.conf 
+ 1724  tail /var/log/apache2/error.log 
+ 1725  less /var/log/apache2/error.log 
+ 1726  ls -ltr
+ 1727  cat login1.cgi 
+ 1728  cd ../../bchain/cgi/
+ 1729  ls -ltr
+ 1730  cat test.cgi 
+ 1731  history | grep a2enmode
+ 1732  history | grep a2enmod
+ 1733  cd ../../mchain/cgi/
+ 1734  ls -lr
+ 1735  ./login-action.py 
+ 1736  ls -ltr /tmp/mchain.log 
+ 1737  tail -f  /tmp/mchain.log 
+ 1738  ls -ltr /tmp/mchain.log 
+ 1739  chmod  777 /tmp/mchain.log 
+ 1740  ./login-action.py 
+ 1741  ./mchain-login.cgi 
+ 1742  ./mchain-login.cgi  > out.html
+ 1743  view out.html 
+ 1744  ping yahoo.com
+ 1745  ifconfig 
+ 1746  ping yahoo.com
+ 1747  route -n
+ 1748  ping yahoo.com
+ 1749  ifdown ppp0
+ 1750  ping yahoo.com
+ 1751  ifconfig 
+ 1752  ifconfig ppp0  down
+ 1753  ifconfig 
+ 1754  ifconfig ppp0 down
+ 1755  ifconfig 
+ 1756  mount
+ 1757  ls -ltr
+ 1758  mkdir data
+ 1759  cd data/
+ 1760  vi btransactions.lst
+ 1761  vi 1863058dad600fb915b808f7c1d68d0b8d45d913928909e72ef011d3fce1a9e0.lst
+ 1762  cd ..
+ 1763  ./loanTransactions.cgi 
+ 1764  touch /opt/mchain/cgi/data/None.lst
+ 1765  vi /opt/mchain/cgi/data/None.lst
+ 1766  ./loanTransactions.cgi 
+ 1767  ls -ltr
+ 1768  cp maintemplate.cgi loanFiles.cgi
+ 1769  ls -ltr
+ 1770  ./loanForm.cgi 
+ 1771  ls -ltr
+ 1772  cat data/loanfile.xml 
+ 1773  cp login-action.py updatemChain.cgi
+ 1774  vi updatemChain.cgi 
+ 1775  pip install flask-restful
+ 1776  pip install sqlachemy
+ 1777  pip install sqlalchemy
+ 1778  cd /opt/mchain/cgi/data/
+ 1779  ls -ltr
+ 1780  vi xml.sample
+ 1781  cat xml.sample 
+ 1782  cd ..
+ 1783  chmod 777 data/
+ 1784  chmod 777 data/*
+ 1785  ls -ltr
+ 1786  ls -ltr data/
+ 1787  ./chainFile.cgi 
+ 1788  ping yahoo.com
+ 1789  ./chainFile.cgi 
+ 1790  view chainids.cgi 
+ 1791  ls -ltr
+ 1792  cp chainids.cgi addressTransactions.cgi 
+ 1793  vi addressTransactions.cgi 
+ 1794  cd ..
+ 1795  ls -ltr
+ 1796  tar cvzf may25-demo.tar.gz cgi/
+ 1797  cd /home/sanjeev/POC/
+ 1798  ls -ltr
+ 1799  cd data/
+ 1800  ls -ltr
+ 1801  cd ../DocRepo/
+ 1802  ls -ltr
+ 1803  rm may1*.tar.gz
+ 1804  ls -ltr
+ 1805  du -sch
+ 1806  cd ..
+ 1807  ls -ltr
+ 1808  tar cvzf May25-DocRepo.tar.gz DocRepo/
+ 1809  ls -ltr
+ 1810  ls -ltrh
+ 1811  cd DO
+ 1812  cd DocRepo/
+ 1813  ls -ltr
+ 1814  ls -ltr  upload/
+ 1815  du -ch
+ 1816  mv upload/ ../
+ 1817  ls -ltr
+ 1818  cd ..
+ 1819  ls -ltr
+ 1820  tar cvzf May25-DocRepo.tar.gz DocRepo/
+ 1821  ls -ltrh
+ 1822  ping yahoo.com
+ 1823  tail /var/log/apache2/error.log
+ 1824  vi /etc/apache2/apache2.conf 
+ 1825  vi /etc/apache2/conf-enabled/serve-cgi-bin.conf 
+ 1826  service apache2 restart
+ 1827  ifconfig 
+ 1828  ping yahoo.com
+ 1829  cat setNetwork 
+ 1830  start network-manager 
+ 1831  ping yahoo.com
+ 1832  ifconfig 
+ 1833  ifconfig docker0 down
+ 1834  ifconfig 
+ 1835  ifconfig br-57981ee7d4d4 down
+ 1836  ifconfig 
+ 1837  route
+ 1838  ifconfig 
+ 1839  ping yahoo.com
+ 1840  ifconfig 
+ 1841  ping yahoo.com
+ 1842  start network-manager
+ 1843  ifconfig 
+ 1844  start network-manager
+ 1845  ifconfig 
+ 1846  cat setNetwork 
+ 1847  stop network-manager 
+ 1848  ifconfig 
+ 1849  ifconfig eth0 192.168.100.1 netmask 255.255.255.0
+ 1850  cat setNetwork 
+ 1851  start network-manager 
+ 1852  cat setNetwork 
+ 1853  stop network-manager 
+ 1854  iptables -l | grep POST
+ 1855  iptables -list | grep POST
+ 1856  man iptables
+ 1857  iptables -L 
+ 1858  iptables -L  | grep POST
+ 1859  cat setNetwork 
+ 1860  iptables -L  | gre ppp0
+ 1861  iptables -L  | grep ppp0
+ 1862  iptables -L
+ 1863  cat setNetwork 
+ 1864  iptables -t nat -A POSTROUTING -o ppp0 -j MASQUERADE
+ 1865  iptables -A FORWARD -i eth0 -o ppp0 -m state --state RELATED,ESTABLISHED -j ACCEPT
+ 1866  iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+ 1867  iptables -L
+ 1868  cat setNetwork 
+ 1869  service isc-dhcp-server status
+ 1870  arp
+ 1871  arp -l
+ 1872  arp -a
+ 1873  arp -vm
+ 1874  arp -vn
+ 1875  arp -n
+ 1876  arp -a
+ 1877  ifconfig 
+ 1878  netstat -nat
+ 1879  ifconfig 
+ 1880  cat setNetwork 
+ 1881  ifconfig eth0 192.168.100.1 netmask 255.255.255.0
+ 1882  service isc-dhcp-server restart 
+ 1883  ifconfig 
+ 1884  cat setNetwork 
+ 1885  start network-manager 
+ 1886  cat setNetwork 
+ 1887  stop network-manager
+ 1888  ifconfig 
+ 1889  cat setNetwork 
+ 1890  ifconfig eth0 192.168.100.1 netmask 255.255.255.0
+ 1891  ifconfig 
+ 1892  service isc-dhcp-server start
+ 1893  cat setNetwork 
+ 1894  start network-manager 
+ 1895  stop network-manager
+ 1896  start network-manager 
+ 1897  python
+ 1898  cat setNetwork 
+ 1899  stop  network-manager 
+ 1900  ifconfig eth0 192.168.100.1 netmask 255.255.255.0
+ 1901  service isc-dhcp-server status
+ 1902  ifconfig 
+ 1903  cd /home/sanjeev/POC/multichain-explorer/
+ 1904  ls -ltr
+ 1905  history | grep Mce
+ 1906  history | grep python
+ 1907  python -m Mce.abe --config mchain.conf 
+ 1908  ls -ltr
+ 1909  cd /home/sanjeev/python/
+ 1910  curl https://sdk.cloud.google.com | bash 
+ 1911  ls -ltr /usr/local/
+ 1912  ls -ltr /usr/local/google-cloud-sdk/
+ 1913  history grep sendwith
+ 1914  history | grep sendwith
+ 1915  cd /home/sanjeev/POC/DocRepo/
+ 1916  ./sendwithmetadatafrom.py 
+ 1917  /sendwithmetadatafrom.py -b 16TUoehwR3WhRYRVHrKtBPJTShiFPuxC1k7YGK -c 1fySLN3BY1qJhTEBnyjZ291GMBfEgsX26ahAh -f insurance-template.xml
+ 1918  ./sendwithmetadatafrom.py -b 16TUoehwR3WhRYRVHrKtBPJTShiFPuxC1k7YGK -c 1fySLN3BY1qJhTEBnyjZ291GMBfEgsX26ahAh -f insurance-template.xml
+ 1919  ./sendwithmetadatafrom.py -b 1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK -c 1RsMU1G3aP7kjgWfunMLzBheV9tmt5nZkyTvLn -f Hayden1.xml
+ 1920  ./sendwithmetadatafrom.py -b 1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK -c 13mXFPHN2GEAGK2SPi2jx79oRGzHeuS1f2U9JP  -f Glen1.xml
+ 1921  ./sendwithmetadatafrom.py -b 1UALod2okBiG3Ccd81MEFcki9RkiPihts4nxfj -c 1UALod2okBiG3Ccd81MEFcki9RkiPihts4nxfj -f mortgageChainTxn1.lst
+ 1922  ./sendwithmetadatafrom.py -b 1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK -c 1TekpixrDiwmu7U5aWKQWJ553BQLJZeduBZxEi  -f Monica1.xml
+ 1923  ./sendwithmetadatafrom.py -b 1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK -c 1Ym2jTKQzYM3nMM6H4NQvKgDQao7ZNU9iuoaiY  -f Dawne1.xml
+ 1924  ./sendwithmetadatafrom.py -b 1UALod2okBiG3Ccd81MEFcki9RkiPihts4nxfj -c 1UALod2okBiG3Ccd81MEFcki9RkiPihts4nxfj -f mortgageChainTxn2.lst
+ 1925  ./sendwithmetadatafrom.py -b 1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK -c 1Ym2jTKQzYM3nMM6H4NQvKgDQao7ZNU9iuoaiY  -f Dawne2.xml
+ 1926  ./sendwithmetadatafrom.py -b 1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK -c 1Ym2jTKQzYM3nMM6H4NQvKgDQao7ZNU9iuoaiY  -f Dawne3.xml
+ 1927  ./sendwithmetadatafrom.py -b 1ECu1vm9DTfbDPTFs1CNa8AQYjzZ3c9sjk4Y6k -c 1WUMrRzMmqBo2PbGgs6LfiNaXiR2i474T8Yrd6 -f Monica1.xml 
+ 1928  ./sendwithmetadatafrom.py -b 1UALod2okBiG3Ccd81MEFcki9RkiPihts4nxfj -c 1UALod2okBiG3Ccd81MEFcki9RkiPihts4nxfj -f mortgageChainTxn3.lst
+ 1929  ./sendwithmetadatafrom.py -b 1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK -c 1bTAapA7aH5dsgeTjU89UBqcP2VcnnvwUFUuR4  -f Jennifer1.xml
+ 1930  ./sendwithmetadatafrom.py -b 1UALod2okBiG3Ccd81MEFcki9RkiPihts4nxfj -c 1UALod2okBiG3Ccd81MEFcki9RkiPihts4nxfj -f mortgageChainTxn4.lst 
+ 1931  ./sendwithmetadatafrom.py -b 1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK -c 1Ym2jTKQzYM3nMM6H4NQvKgDQao7ZNU9iuoaiY  -f Dawne4.xml
+ 1932  ./sendwithmetadatafrom.py -b 1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK -c 1bTAapA7aH5dsgeTjU89UBqcP2VcnnvwUFUuR4  -f Jennifer2.xml
+ 1933  ls -ltr
+ 1934  ./sendwithmetadatafrom.py -b 1UALod2okBiG3Ccd81MEFcki9RkiPihts4nxfj -c 1UALod2okBiG3Ccd81MEFcki9RkiPihts4nxfj -f mortgageChainTxn5.lst 
+ 1935  ./sendwithmetadatafrom.py -b 1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK -c 1Ym2jTKQzYM3nMM6H4NQvKgDQao7ZNU9iuoaiY  -f Dawne5.xml
+ 1936  ./sendwithmetadatafrom.py -b 1UALod2okBiG3Ccd81MEFcki9RkiPihts4nxfj -c 1UALod2okBiG3Ccd81MEFcki9RkiPihts4nxfj -f mortgageChainTxn6.lst 
+ 1937  ifconfig 
+ 1938  ping yahoo.cp
+ 1939  ping yahoo.com
+ 1940  ifconfig 
+ 1941  ping yahoo.com
+ 1942  ./sendwithmetadatafrom.py -b 1SwxAbPuw4uqqB8usCocXR7ot3oB7zkPa5e1re -c 1aV8d7Djb2DDGgromveHW8Z98gAQ9eqdiXLJ5s -f Jennifer-AXA1.xml
+ 1943  ./sendwithmetadatafrom.py -b 1YphfcTrtiEDhe3P9x4i1tfpgmXiBh8vBG9WZk -c 19L15ad2a4fQrvLt4DS2qJxiQNannQNqUxjEvj -f Jennifer-Allianz1.xml
+ 1944  ./sendwithmetadatafrom.py -b 1YphfcTrtiEDhe3P9x4i1tfpgmXiBh8vBG9WZk -c 1QQVskdJbxswwt4qbU8wBK8VccrZt7j7W4bxn7 -f Dawne-Allianz1.xml
+ 1945  ./sendwithmetadatafrom.py -b 1YphfcTrtiEDhe3P9x4i1tfpgmXiBh8vBG9WZk -c 1QQVskdJbxswwt4qbU8wBK8VccrZt7j7W4bxn7 -f Dawne-Allianz2.xml
+ 1946  ./sendwithmetadatafrom.py -b 1YphfcTrtiEDhe3P9x4i1tfpgmXiBh8vBG9WZk -c 1QQVskdJbxswwt4qbU8wBK8VccrZt7j7W4bxn7 -f Dawne-Allianz3.xml
+ 1947  ./sendwithmetadatafrom.py -b 1X8XBM3s22NubBr8UoaGk5mL2uqyyCgepyAU72 -c 1X8XBM3s22NubBr8UoaGk5mL2uqyyCgepyAU72 -f insuranceChainTxn1.lst
+ 1948  cd /home/sanjeev/Downloads/hypergraph/
+ 1949  ls -ltr
+ 1950  unzip socialnps_api_data.zip 
+ 1951  ifconfig
+ 1952  ifconfig ppp0 down
+ 1953  mount
+ 1954  start network-manager 
+ 1955  cd
+ 1956  start network-manager 
+ 1957  stop network-manager 
+ 1958  cat setNetwork 
+ 1959  ifconfig eth0 192.168.100.1 netmask 255.255.255.0
+ 1960  service isc-dhcp-server restart 
+ 1961  iptables -t nat -A POSTROUTING -o ppp0 -j MASQUERADE
+ 1962  iptables -A FORWARD -i eth0 -o ppp0 -m state --state RELATED,ESTABLISHED -j ACCEPT
+ 1963  iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+ 1964  cd /opt/mchain/log/
+ 1965  ls -ltr
+ 1966  chown sanjeev.sanjeev mchain.log 
+ 1967  chmod 666 mchain.log 
+ 1968  vi /etc/apache2/conf-enabled/serve-cgi-bin.conf 
+ 1969  service apache2 restart
+ 1970  start network-manager 
+ 1971  cd
+ 1972  stop network-manager 
+ 1973  cat setNetwork 
+ 1974  ifconfig eth0 192.168.100.1 netmask 255.255.255.0
+ 1975  service isc-dhcp-server restart
+ 1976  iptables -t nat -A POSTROUTING -o ppp0 -j MASQUERADE
+ 1977  iptables -A FORWARD -i eth0 -o ppp0 -m state --state RELATED,ESTABLISHED -j ACCEPT
+ 1978  iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+ 1979  chown sanjeev.sanjeev /opt/mchain/insurance/customer/viewPolicy.cgi 
+ 1980  chown sanjeev.sanjeev /opt/mchain/mortgage/customer/loanProfile.cgi 
+ 1981  view /home/sanjeev/Downloads/new-gui-pramod/roushini/insurance/accord.html 
+ 1982  start network-manager 
+ 1983  cat setNetwork 
+ 1984  ifconfig eth0 192.168.100.1 netmask 255.255.255.0
+ 1985  service isc-dhcp-server restart 
+ 1986  iptables -t nat -A POSTROUTING -o ppp0 -j MASQUERADE
+ 1987  iptables -A FORWARD -i eth0 -o ppp0 -m state --state RELATED,ESTABLISHED -j ACCEPT
+ 1988  iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+ 1989  cd /opt/mchain/mortgage/
+ 1990  ls -ltr
+ 1991  cd /opt/mchain/mortgage/
+ 1992  ls -ltr
+ 1993  cd ..
+ 1994  ls -ltr
+ 1995  cd /opt/mchain/mortgage/
+ 1996  ls -ltr
+ 1997  tail -f /var/log/apache2/error.log 
+ 1998  tail -f /var/log/apache2/access.log
+ 1999  tail -f /var/log/apache2/error.log 
+ 2000  tail -f /var/log/apache2/access.log
+ 2001  ifconfig 
+ 2002  mount
+ 2003  ifconfig 
+ 2004  pwd
+ 2005  start network-manager 
+ 2006  cd /opt/mchain/cgi/data/
+ 2007  ls -ltrh
+ 2008  su -sch
+ 2009  du -sch
+ 2010  tar cvzf setupfiles.tar.gz *
+ 2011  history
+ 2012  history > history.txt

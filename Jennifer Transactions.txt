@@ -1,0 +1,87 @@
+Jennifer Transactions
+
+Create address and grant permissions
+---------------------------
+mchain: getnewaddress Jennifer_JPMC                              
+{"method":"getnewaddress","params":["Jennifer_JPMC"],"id":1,"chain_name":"mchain"}
+
+1bTAapA7aH5dsgeTjU89UBqcP2VcnnvwUFUuR4
+mchain: grant 1bTAapA7aH5dsgeTjU89UBqcP2VcnnvwUFUuR4 send,receive
+{"method":"grant","params":["1bTAapA7aH5dsgeTjU89UBqcP2VcnnvwUFUuR4","send,receive"],"id":1,"chain_name":"mchain"}
+
+c1e1f56096ea0fd48fd19424c0c2a88fbdd3704d5d9cb22b409c81fabaa63376
+
+
+Add to Database:
+----------------
+
+ insert into MortgageAccounts values (null, "JPMC", "Jennifer" ,"1bTAapA7aH5dsgeTjU89UBqcP2VcnnvwUFUuR4");
+
+---
+Add first loan application to blockchain
+
+2.JPMC: 1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK Jennifer :1bTAapA7aH5dsgeTjU89UBqcP2VcnnvwUFUuR4 : File Jennifer1.xml 
+
+./sendwithmetadatafrom.py -b 1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK -c 1bTAapA7aH5dsgeTjU89UBqcP2VcnnvwUFUuR4  -f Jennifer1.xml
+
+	Result = 
+	{u'id': u'1465822881.18-490396', u'result': u'30b70d2d06df2e5d47a310875dece63e78addbca02479c4e5a65946bebbf64a4', u'error': None}
+	30b70d2d06df2e5d47a310875dece63e78addbca02479c4e5a65946bebbf64a4
+	SendwithmetadataFrom 
+	{'txid': '30b70d2d06df2e5d47a310875dece63e78addbca02479c4e5a65946bebbf64a4'}
+	TxID: 30b70d2d06df2e5d47a310875dece63e78addbca02479c4e5a65946bebbf64a4
+
+
+insert into mortgageChainTransactions  values (null , "30b70d2d06df2e5d47a310875dece63e78addbca02479c4e5a65946bebbf64a4","JPMC","1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK","Jennifer","1bTAapA7aH5dsgeTjU89UBqcP2VcnnvwUFUuR4","11-May-2014 10:10:00");
+insert into mortgageCustomerHistory values (null, "30b70d2d06df2e5d47a310875dece63e78addbca02479c4e5a65946bebbf64a4","Jennifer","1bTAapA7aH5dsgeTjU89UBqcP2VcnnvwUFUuR4","Loan Initiated","11-May-2014 10:10:00");
+
+
+
+Create Mortgage chain 4.txt
+
+1|e98863d2cd2505b4fc4aef70560514c0533be0e5bd7aed62a18e27d4de3c9ddf|JPMC|1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK|Dawne|1Ym2jTKQzYM3nMM6H4NQvKgDQao7ZNU9iuoaiY|21-Jan-2014 10:10:00
+2|96b953a8776b64c1ee89cb0b3fc1e418f716a43c76ec92a7bbfd155a2440cb29|JPMC|1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK|Dawne|1Ym2jTKQzYM3nMM6H4NQvKgDQao7ZNU9iuoaiY|22-Jan-2014 10:10:00
+3|30b70d2d06df2e5d47a310875dece63e78addbca02479c4e5a65946bebbf64a4|JPMC|1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK|Jennifer|1bTAapA7aH5dsgeTjU89UBqcP2VcnnvwUFUuR4|11-May-2014 10:10:00
+
+
+root@mphstellar:/home/sanjeev/POC/DocRepo# ./sendwithmetadatafrom.py -b 1UALod2okBiG3Ccd81MEFcki9RkiPihts4nxfj -c 1UALod2okBiG3Ccd81MEFcki9RkiPihts4nxfj -f mortgageChainTxn4.lst 	
+	Result = 
+	{u'id': u'1465823510.29-174294', u'result': u'bea5d25f0d0f0d6db2e48395b3f903db240daf00bd1619cb11df3c9462511c6f', u'error': None}
+	bea5d25f0d0f0d6db2e48395b3f903db240daf00bd1619cb11df3c9462511c6f
+	SendwithmetadataFrom 
+	{'txid': 'bea5d25f0d0f0d6db2e48395b3f903db240daf00bd1619cb11df3c9462511c6f'}
+	TxID: bea5d25f0d0f0d6db2e48395b3f903db240daf00bd1619cb11df3c9462511c6f
+-------------------------
+
+
+Add jennifer2.xml to chain
+============================
+./sendwithmetadatafrom.py -b 1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK -c 1bTAapA7aH5dsgeTjU89UBqcP2VcnnvwUFUuR4  -f Jennifer2.xml
+	Result = 
+	{u'id': u'1465824874.33-424849', u'result': u'3bf264c88a16058381b86489029154a73755d9488f671b0f28f70f355f808dbb', u'error': None}
+	3bf264c88a16058381b86489029154a73755d9488f671b0f28f70f355f808dbb
+	SendwithmetadataFrom 
+	{'txid': '3bf264c88a16058381b86489029154a73755d9488f671b0f28f70f355f808dbb'}
+	TxID: 3bf264c88a16058381b86489029154a73755d9488f671b0f28f70f355f808dbb
+ADD DATABASE ENTRIES
+
+insert into mortgageChainTransactions  values (null , "3bf264c88a16058381b86489029154a73755d9488f671b0f28f70f355f808dbb","JPMC","1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK","Jennifer","1bTAapA7aH5dsgeTjU89UBqcP2VcnnvwUFUuR4","21-May-2014 10:10:00");
+insert into mortgageCustomerHistory values (null, "3bf264c88a16058381b86489029154a73755d9488f671b0f28f70f355f808dbb","Jennifer","1bTAapA7aH5dsgeTjU89UBqcP2VcnnvwUFUuR4","Loan Approved","21-May-2014 10:10:00");
+
+
+
+
+Add mchaintxn5 -- Refer DawneTxns.txt
+
+sanjeev@mphstellar:/opt/mchain/cgi/data$ cat mortgageChainTxn5.lst 
+1|08ff18f8deb8d1e99f3237797ae9a7dce9277479de8067f52ccf546b999ba6aa|JPMC|1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK|Dawne|1Ym2jTKQzYM3nMM6H4NQvKgDQao7ZNU9iuoaiY|22-Jan-2014 12:10:00
+2|3bf264c88a16058381b86489029154a73755d9488f671b0f28f70f355f808dbb|JPMC|1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK|Jennifer|1bTAapA7aH5dsgeTjU89UBqcP2VcnnvwUFUuR4|21-May-2014 10:10:00
+
+root@mphstellar:/home/sanjeev/POC/DocRepo# ./sendwithmetadatafrom.py -b 1UALod2okBiG3Ccd81MEFcki9RkiPihts4nxfj -c 1UALod2okBiG3Ccd81MEFcki9RkiPihts4nxfj -f mortgageChainTxn5.lst 
+Result = 
+{u'id': u'1465825172.96-308705', u'result': u'bba120dfaf24676f969aafa8fd708856b466b8cbc7b583792db7432b65878fb0', u'error': None}
+bba120dfaf24676f969aafa8fd708856b466b8cbc7b583792db7432b65878fb0
+SendwithmetadataFrom 
+{'txid': 'bba120dfaf24676f969aafa8fd708856b466b8cbc7b583792db7432b65878fb0'}
+TxID: bba120dfaf24676f969aafa8fd708856b466b8cbc7b583792db7432b65878fb0
+

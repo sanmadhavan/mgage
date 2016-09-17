@@ -1,0 +1,19 @@
+<insurance>
+	<id>Quote - Amelia JohnSon</id>
+	<uniqueNumber>INS-COM1-111</uniqueNumber>
+	<Borrower>Amelia Johnson</Borrower>
+	<PropertyAddress>32, 2nd Lane, PhilipStreet,Oregon</PropertyAddress>
+	<insuranceTerm>1 Year </insuranceTerm>
+	<effectiveDate>11-11-2011</effectiveDate>
+	<expiryDate>11-11-2012</expiryDate>
+	<premium>$10000</premium>
+	<DwellingCoverage>$200,000</DwellingCoverage>
+	<extendedCoverage>$100,000</extendedCoverage>
+	<equipmentsCoverage>$15,000</equipmentsCoverage>
+	<lossofUse></lossofUse>
+	<deductions></deductions>
+	<mortgageClause></mortgageClause>
+	<loanNumber></loanNumber>
+	<effectiveTime></effectiveTime>
+	<mchainReference></mchainReference>
+</insurance>

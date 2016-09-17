@@ -1,0 +1,339 @@
+<loandata>
+	<BorrowerProfile display='Borrower Profile'>
+		<Borrower>Jennifer</Borrower>
+		<BorrowerType>Salaried</BorrowerType>
+		<LoanNumber>123456789119</LoanNumber>
+		<SSN>666-333-212</SSN>
+		<LTVratio>80%</LTVratio>
+		<Appraisal>3.60%</Appraisal>
+	</BorrowerProfile>
+	<MortgageInfo display='Mortgage Information'>
+		<mortgageType>FHA</mortgageType>
+		<amortizationType>Fixed</amortizationType>
+		<loanAmount>$54,72,000 </loanAmount>
+		<loanterm>360</loanterm>
+		<interestRate>3.5%</interestRate>
+		<loanStatus>Disbursed</loanStatus>
+		<insurance>Received</insurance>
+	</MortgageInfo>
+	<PropertyInfo display='Property Information'>
+		<purpose>Refinance</purpose>
+		<propertyType>Residence</propertyType>
+		<initialDeposit>$10,94,400</initialDeposit>
+		<Address>3, 21st Street Park,Soton,California</Address>
+		<floodZone>Low to moderate</floodZone>
+		<emi>17800</emi>
+	</PropertyInfo>
+	<Documents>
+		<IdentityDocuments display='Identity Documents'>
+			<document>
+				<docname>SSN</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2014 09:30:00</timestamp>
+				<uploader>JPMC</uploader>
+				<auditor>JPMC</auditor>
+				<provider>JPMC</provider>
+			</document>
+			<document>
+				<docname>Passport</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2014 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>CEF</provider>
+			</document>
+			<document>
+				<docname>Driver License</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2014 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+			<document>
+				<docname>Pitch Point Verification</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2014 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+			<document>
+				<docname>Experian Credit Score</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2014 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+		</IdentityDocuments>
+		<MortgageDocuments display='Mortgage'>
+			<document>
+				<docname>1003 Uniform Residential Application</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-June-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+			<document>
+				<docname>ITOP</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2014 10:10:20</timestamp>
+				<uploader>Mark</uploader>
+				<auditor>Jim</auditor>
+				<provider>Mark</provider>
+			</document>
+			<document>
+				<docname>HUD</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-June-2014 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+			<document>
+				<docname>Good Faith Estimate</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2014 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+		</MortgageDocuments>
+		<PropertyDocuments display='Propery Documents'>
+			<document>
+				<docname>Appraisal</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+			<document>
+				<docname>Prelims</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+			<document>
+				<docname>Previous Notes</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+			<document>
+				<docname>Inspection</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+				<file>ah212121u329329</file>
+			</document>
+			<document>
+				<docname>USPS</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+		</PropertyDocuments>
+		<Disclosures display='Disclosures'>
+			<document>
+				<docname>ECOA</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+			<document>
+				<docname>Service</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+			<document>
+				<docname>Right to Receive Appraisal</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+			<document>
+				<docname>Loan Origination Agreement</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+			<document>
+				<docname>Advance Fee Agreement</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+		</Disclosures>
+		<TaxAndInsurance display='Tax and Insurance'>
+			<document>
+				<docname>Tax Certificate (Online)</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+			<document>
+				<docname>Tax Cert (Title)</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+			<document>
+				<docname>Property Insurance</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>31-May-2014</timestamp>
+				<uploader>Jonathan</uploader>
+				<auditor>Tim</auditor>
+				<provider>Allianz</provider>
+				<ComplianceCheck>
+					<compliance checklist='Borrower/Borrowers name as per prelim' value='YES'/>
+					<compliance checklist='Coverage amount greater than or equal to appraised value or loan amount whichever is less' value='YES'/>
+					<compliance checklist='Property Address as per prelim' value='YES'/>
+					<compliance checklist='Deductibles not more than 2% of coverage' value='YES'/>
+					<compliance checklist='Effective and Expiry Date present' value='YES'/>
+					<compliance checklist='Premium amount present' value='YES'/>
+					<compliance checklist='ISAOA clause in mortgagee name' value='YES'/>	
+					<compliance checklist='Should loan be disbursed' value='YES'/>
+				</ComplianceCheck>
+				<policyDoc>-</policyDoc>
+			</document>
+		</TaxAndInsurance>
+		<Fee display='Fee'>
+			<document>
+				<docname>Title Fee Sheet</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+			<document>
+				<docname>Appraisal Fee</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+
+		</Fee>
+		<IncomeDocuments display='Income Documemts'>
+			<document>
+				<docname>Recent 2 months Pay Stubs</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+			<document>
+				<docname>Verification of Employment</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+			<document>
+				<docname>Verification of Deposit</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+		</IncomeDocuments>
+		<FinalLoanDocuments display='Final Loan Documents'>
+			<document>
+				<docname>Closing Loan Package</docname>
+				<available>NO</available>
+				<verified>NO</verified>
+				<timestamp>-</timestamp>
+				<uploader>-</uploader>
+				<auditor>-</auditor>
+				<provider>-</provider>
+			</document>
+			<document>
+				<docname>Loan Disbursal Wire</docname>
+				<available>NO</available>
+				<verified>NO</verified>
+				<timestamp>-</timestamp>
+				<uploader>-</uploader>
+				<auditor>-</auditor>
+				<provider>-</provider>
+			</document>
+			<document>
+				<docname>Calculation Sheets</docname>
+				<available>NO</available>
+				<verified>NO</verified>
+				<timestamp>-</timestamp>
+				<uploader>-</uploader>
+				<auditor>-</auditor>
+				<provider>-</provider>
+			</document>
+			<document>
+				<docname>Compliance Checklists</docname>
+				<available>NO</available>
+				<verified>NO</verified>
+				<timestamp>-</timestamp>
+				<uploader>-</uploader>
+				<auditor>-</auditor>
+				<provider>-</provider>
+			</document>
+		</FinalLoanDocuments>
+	</Documents>
+	<Payments>
+	</Payments>
+</loandata>

@@ -1,0 +1,36 @@
+<beacon>
+	<id>Beacon1</id>
+ 	<productType>Footwear</productType>
+	<brand>Puma</brand>
+	<model>P123</model>
+	<discount>10%</discount>
+	<modify>YES</modify>
+	<price>3299</price>
+</beacon>
+<beacon>
+	<id>Beacon1</id>
+ 	<productType>Footwear</productType>
+	<brand>Puma</brand>
+	<model>P123</model>
+	<discount>10%</discount>
+	<modify>YES</modify>
+	<price>3299</price>
+</beacon>
+<beacon>
+	<id>Beacon1</id>
+ 	<productType>Footwear</productType>
+	<brand>Puma</brand>
+	<model>P123</model>
+	<discount>10%</discount>
+	<modify>YES</modify>
+	<price>3299</price>
+</beacon>
+<beacon>
+	<id>Beacon1</id>
+ 	<productType>Footwear</productType>
+	<brand>Puma</brand>
+	<model>P123</model>
+	<discount>10%</discount>
+	<modify>YES</modify>
+	<price>3299</price>
+</beacon>

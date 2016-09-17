@@ -1,0 +1,240 @@
+INSURANCE CHAINS Setup
+=======================
+
+sqlite> insert into mchainEntity values (null,"INSURANCE","AllianzCHAIN","1JXfZJ4zM7awSPFC7DwEEMYpXTND6DHTGkRzmz");
+sqlite> insert into mchainEntity values (null,"INSURANCE","AIGCHAIN","1UHRx57K9h1wR1spWLe33gYtmQqXFUWoFdf3MG");
+sqlite> insert into mchainEntity values (null,"INSURANCE","AXACHAIN","1Y8VJpRoUP95iAGrwmJmXsbVqsN7CuC8suxPnT");
+sqlite> select * from mchainEntity;
+2|INSURANCE|Allianz|1YphfcTrtiEDhe3P9x4i1tfpgmXiBh8vBG9WZk
+4|INSURANCE|AIG|14wW8HNiQYT5PFgcCWQWyZh2UGpMMFQQdDcGwa
+6|INSURANCE|AXA|1JRJaDhg8EXnZvWz4rWrafMkJx3MhNWxX92eT
+7|INSURANCE|INSURANCECHAIN|1X8XBM3s22NubBr8UoaGk5mL2uqyyCgepyAU72
+8|MORTGAGE|MORTGAGECHAIN|1UALod2okBiG3Ccd81MEFcki9RkiPihts4nxfj
+9|BANKING|BANKINGCHAIN|1SqXG2oA2xddNGcdUHjtea5WHnQ4h1ckeM1mjJ
+10|MORTGAGE|JPMC|1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK
+11|MORTGAGE|CITI|1ECu1vm9DTfbDPTFs1CNa8AQYjzZ3c9sjk4Y6k
+12|BANKING|Bank of America|1JzWPkqVsmGC3FTBbuZSoGDakgcddWxnLgbMNF
+13|BANKING|Wells Fargo|16es4e4fas3Pbhb3ZY8qGNq6Ly9E7U9khynVo4
+14|BANKING|RBS|1Pzsdifke6Mtv2NweFsCGVvuiuE1FXM5ZaKUmH
+15|INSURANCE|AllianzCHAIN|1JXfZJ4zM7awSPFC7DwEEMYpXTND6DHTGkRzmz
+16|INSURANCE|AIGCHAIN|1UHRx57K9h1wR1spWLe33gYtmQqXFUWoFdf3MG
+17|INSURANCE|AXACHAIN|1Y8VJpRoUP95iAGrwmJmXsbVqsN7CuC8suxPnT
+
+
+===============================================================
+
+sqlite> create table InsuranceAccounts (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, BankName ,CustomerName, mchainAddress);
+
+CREATE ADDRESSES
+-----------------
+
+JENNIFER & DAWNE for Allianz,AIG,AXA
+=====================================
+mchain: getnewaddress Jennifer_Allianz
+{"method":"getnewaddress","params":["Jennifer_Allianz"],"id":1,"chain_name":"mchain"}
+
+19L15ad2a4fQrvLt4DS2qJxiQNannQNqUxjEvj
+mchain: getnewaddress Dawne_Allianz   
+{"method":"getnewaddress","params":["Dawne_Allianz"],"id":1,"chain_name":"mchain"}
+
+1QQVskdJbxswwt4qbU8wBK8VccrZt7j7W4bxn7
+mchain: getnewaddress Jennifer_AIG    
+{"method":"getnewaddress","params":["Jennifer_AIG"],"id":1,"chain_name":"mchain"}
+
+1V3h6j2P1AFTwWGEysxfE8hApd9euNEJ6SE9fV
+mchain: getnewaddress Jennifer_AXA
+{"method":"getnewaddress","params":["Jennifer_AXA"],"id":1,"chain_name":"mchain"}
+
+1SMDfs1nbJqA9m1jLzq3YLU7P7K9S6isMkyhBp
+mchain: getnewaddress Dawne_AIG    
+{"method":"getnewaddress","params":["Dawne_AIG"],"id":1,"chain_name":"mchain"}
+
+12Dc3Qd7BiZe2BqWn18v44pSVTsBMeM4A8eKZQ
+mchain: getnewaddress Dawne_AXA
+{"method":"getnewaddress","params":["Dawne_AXA"],"id":1,"chain_name":"mchain"}
+
+--------------- GRANT PERMISSIONS --------------------------------------
+1aZugDNavrCGw9jXy7s1RTT3ipt9YLGZJCwJJb
+mchain: grant 19L15ad2a4fQrvLt4DS2qJxiQNannQNqUxjEvj send,receive
+{"method":"grant","params":["19L15ad2a4fQrvLt4DS2qJxiQNannQNqUxjEvj","send,receive"],"id":1,"chain_name":"mchain"}
+r
+717b61d12dcd4a5cc262fabecb46a43fafa436ebedfe9f00999a79ebb9ae8ade
+mchain: grant 1QQVskdJbxswwt4qbU8wBK8VccrZt7j7W4bxn7 send,receive
+{"method":"grant","params":["1QQVskdJbxswwt4qbU8wBK8VccrZt7j7W4bxn7","send,receive"],"id":1,"chain_name":"mchain"}
+
+2d7c1fd00bf4ad710519cb5f6a6c58fef5a02c7dbf6a137f16aa3cf732d875c2
+mchain: grant 1V3h6j2P1AFTwWGEysxfE8hApd9euNEJ6SE9fV send,receive
+{"method":"grant","params":["1V3h6j2P1AFTwWGEysxfE8hApd9euNEJ6SE9fV","send,receive"],"id":1,"chain_name":"mchain"}
+
+c8d1795ffa0a3034c5158ba0216b8d910e96c2677362dfb603ce97e74642faa2
+mchain: grant 1SMDfs1nbJqA9m1jLzq3YLU7P7K9S6isMkyhBp send,receive
+{"method":"grant","params":["1SMDfs1nbJqA9m1jLzq3YLU7P7K9S6isMkyhBp","send,receive"],"id":1,"chain_name":"mchain"}
+
+d8c9e29ae741182b2daf528f0cd1fbf7ac2b52e9aa5228eefbb460db7077ac49
+mchain: grant 12Dc3Qd7BiZe2BqWn18v44pSVTsBMeM4A8eKZQ send,receive
+{"method":"grant","params":["12Dc3Qd7BiZe2BqWn18v44pSVTsBMeM4A8eKZQ","send,receive"],"id":1,"chain_name":"mchain"}
+
+670bf2667ca719e3fcc51894f17e804577feb12088c9bbdc1549f0f5853f9591
+mchain: grant 1aZugDNavrCGw9jXy7s1RTT3ipt9YLGZJCwJJb send,receive
+{"method":"grant","params":["1aZugDNavrCGw9jXy7s1RTT3ipt9YLGZJCwJJb","send,receive"],"id":1,"chain_name":"mchain"}
+
+eafcb768c44db18dd1396eb384fb5ae5acbb26068717cd3297580b0bfc632371
+mchain: 
+
+--------------------------- UPDATE DAtabase -------------
+
+sqlite> insert into InsuranceAccounts values ( null,"Allianz","Jennifer","19L15ad2a4fQrvLt4DS2qJxiQNannQNqUxjEvj");
+sqlite> insert into InsuranceAccounts values ( null,"Allianz","Dawne","1QQVskdJbxswwt4qbU8wBK8VccrZt7j7W4bxn7");
+sqlite> insert into InsuranceAccounts values ( null,"AIG","Jennifer","1V3h6j2P1AFTwWGEysxfE8hApd9euNEJ6SE9fV");
+sqlite> insert into InsuranceAccounts values ( null,"AIG","Dawne","12Dc3Qd7BiZe2BqWn18v44pSVTsBMeM4A8eKZQ");
+sqlite> insert into InsuranceAccounts values ( null,"AXA","Jennifer","1SMDfs1nbJqA9m1jLzq3YLU7P7K9S6isMkyhBp");
+sqlite> insert into InsuranceAccounts values ( null,"AXA","Dawne","1aZugDNavrCGw9jXy7s1RTT3ipt9YLGZJCwJJb");
+
+
+
+Chain 1 --- Allianz
+	Block 1	------------ Txns 1 ( Policy Jennifer)
+	Block 2 ---------  Txn1 (Quote Jennifer - accepted
+	Block 3  ---------Txns 2 ( quote1 Jennifer - published Quote Dawne - published)
+	.
+	.
+	Block n
+
+Chain 2----- AIG
+	Block 1	------------ Txns 1 ( Policy Dawne)   
+	Block 2 ---------  Txn1 (Quote Dawne - accepted
+	Block 3  ---------Txns 2 ( quote1 Jennifer - published Quote Dawne - published)
+Chain 3 -- AXA
+	Block 1	------------ Txns 1 ( Policy Jennifer)
+	Block 2 ---------  Txn1 (Quote Jennifer - accepted
+	Block 3  ---------Txns 2 ( quote1 Jennifer - published Quote Dawne - published)
+
+
+Txn _ Display
+
+	BlockChain Info ---
+
+	Quote Info and status
+
+	Profile Info and Quote Description
+
+
+
+TESTING INSURANCE GUI
+-------------------
+
+Result = 
+{u'id': u'1465894490.23-943278', u'result': u'568f6d367a0c6ff6233783a5af84cd95b20cfa9014158d6e91eb9f19aa51019e', u'error': None}
+568f6d367a0c6ff6233783a5af84cd95b20cfa9014158d6e91eb9f19aa51019e
+SendwithmetadataFrom 
+{'txid': '568f6d367a0c6ff6233783a5af84cd95b20cfa9014158d6e91eb9f19aa51019e'}
+TxID: 568f6d367a0c6ff6233783a5af84cd95b20cfa9014158d6e91eb9f19aa51019e
+root@mphstellar:/home/sanjeev/POC/DocRepo# ./sendwithmetadatafrom.py -b 1SwxAbPuw4uqqB8usCocXR7ot3oB7zkPa5e1re -c 1aV8d7Djb2DDGgromveHW8Z98gAQ9eqdiXLJ5s -f Jennifer-AXA1.xml
+
+---------
+
+CREATE TABLE insuranceChainTransactions (ROWID INTEGER PRIMARY KEY AUTOINCREMENT,txid,customer,caddress,txtype,status,TimeStamp);
+CREATE TABLE insuranceCustomerHistory (ROWID INTEGER PRIMARY KEY AUTOINCREMENT,Txid, CustomerName, CustomerAddress,Description,TimeStamp);
+
+POSTING Quote for Jennifer insurance chain :
+ 
+
+Allianz: 1YphfcTrtiEDhe3P9x4i1tfpgmXiBh8vBG9WZk Jennifer : 19L15ad2a4fQrvLt4DS2qJxiQNannQNqUxjEvj File : Jennifer-Alianz.xml
+root@mphstellar:/home/sanjeev/POC/DocRepo# ./sendwithmetadatafrom.py -b 1YphfcTrtiEDhe3P9x4i1tfpgmXiBh8vBG9WZk -c 19L15ad2a4fQrvLt4DS2qJxiQNannQNqUxjEvj -f Jennifer-Allianz1.xml
+	Result = 
+	{u'id': u'1465907158.4-253738', u'result': u'03d94a3d3772a0fefb5e7c929d623c780a605927a43274d6e2425d1640e817eb', u'error': None}
+	03d94a3d3772a0fefb5e7c929d623c780a605927a43274d6e2425d1640e817eb
+	SendwithmetadataFrom 
+	{'txid': '03d94a3d3772a0fefb5e7c929d623c780a605927a43274d6e2425d1640e817eb'}
+	TxID: 03d94a3d3772a0fefb5e7c929d623c780a605927a43274d6e2425d1640e817eb
+
+
+insert into insuranceChainTransactions  values (null , "03d94a3d3772a0fefb5e7c929d623c780a605927a43274d6e2425d1640e817eb","Jennifer","19L15ad2a4fQrvLt4DS2qJxiQNannQNqUxjEvj","Quote","Published","21-Dec-2013 10:10:00");
+
+
+insert into insuranceCustomerHistory values (null, "03d94a3d3772a0fefb5e7c929d623c780a605927a43274d6e2425d1640e817eb","Jennifer","19L15ad2a4fQrvLt4DS2qJxiQNannQNqUxjEvj","Quote Published","21-Dec-2013 10:10:00");
+
+
+
+
+
+
+Pposting for Dawne for insurance chain :
+
+Allianz: 1YphfcTrtiEDhe3P9x4i1tfpgmXiBh8vBG9WZk  Dawne : 1QQVskdJbxswwt4qbU8wBK8VccrZt7j7W4bxn7 file: Dawne-Allinz.xml 
+
+Result = 
+{u'id': u'1465907232.15-145651', u'result': u'42401b9cdf5f4961eede8d050df90231e6d7660f2150a96cc9ab3e5743394402', u'error': None}
+42401b9cdf5f4961eede8d050df90231e6d7660f2150a96cc9ab3e5743394402
+SendwithmetadataFrom 
+{'txid': '42401b9cdf5f4961eede8d050df90231e6d7660f2150a96cc9ab3e5743394402'}
+TxID: 42401b9cdf5f4961eede8d050df90231e6d7660f2150a96cc9ab3e5743394402
+root@mphstellar:/home/sanjeev/POC/DocRepo# ./sendwithmetadatafrom.py -b 1YphfcTrtiEDhe3P9x4i1tfpgmXiBh8vBG9WZk -c 1QQVskdJbxswwt4qbU8wBK8VccrZt7j7W4bxn7 -f Dawne-Allianz1.xml
+
+insert into insuranceChainTransactions  values (null , "42401b9cdf5f4961eede8d050df90231e6d7660f2150a96cc9ab3e5743394402","Dawne","1QQVskdJbxswwt4qbU8wBK8VccrZt7j7W4bxn7","Quote","Published","21-Dec-2013 10:10:00");
+
+insert into insuranceCustomerHistory values (null, "42401b9cdf5f4961eede8d050df90231e6d7660f2150a96cc9ab3e5743394402","Dawne","1QQVskdJbxswwt4qbU8wBK8VccrZt7j7W4bxn7","Quote Published","21-Dec-2013 10:10:00");
+
+
+
+---------------------------------
+
+POST Quote accepted for Dawne 
+root@mphstellar:/home/sanjeev/POC/DocRepo# ./sendwithmetadatafrom.py -b 1YphfcTrtiEDhe3P9x4i1tfpgmXiBh8vBG9WZk -c 1QQVskdJbxswwt4qbU8wBK8VccrZt7j7W4bxn7 -f Dawne-Allianz2.xml
+
+	Result = 
+	{u'id': u'1465907348.79-831226', u'result': u'17dc4331620298463b1d4e0e50617079773810c86927f1b0414e75a053ee8bf3', u'error': None}
+	17dc4331620298463b1d4e0e50617079773810c86927f1b0414e75a053ee8bf3
+	SendwithmetadataFrom 
+	{'txid': '17dc4331620298463b1d4e0e50617079773810c86927f1b0414e75a053ee8bf3'}
+	TxID: 17dc4331620298463b1d4e0e50617079773810c86927f1b0414e75a053ee8bf3
+
+insert into insuranceChainTransactions  values (null , "17dc4331620298463b1d4e0e50617079773810c86927f1b0414e75a053ee8bf3","Dawne","1QQVskdJbxswwt4qbU8wBK8VccrZt7j7W4bxn7","Quote","Accepted","22-Dec-2013 10:10:00");
+
+insert into insuranceCustomerHistory values (null, "17dc4331620298463b1d4e0e50617079773810c86927f1b0414e75a053ee8bf3","Dawne","1QQVskdJbxswwt4qbU8wBK8VccrZt7j7W4bxn7","Quote Accepted","22-Dec-2013 10:10:00");
+
+
+
+
+Policy Published for Dawne
+root@mphstellar:/home/sanjeev/POC/DocRepo# ./sendwithmetadatafrom.py -b 1YphfcTrtiEDhe3P9x4i1tfpgmXiBh8vBG9WZk -c 1QQVskdJbxswwt4qbU8wBK8VccrZt7j7W4bxn7 -f Dawne-Allianz3.xml
+
+	Result = 
+	{u'id': u'1465907521.94-348949', u'result': u'1038c1528e3a74436b99c220c0ade7e247ca3f5c28474dc5111a96d6a36476b8', u'error': None}
+	1038c1528e3a74436b99c220c0ade7e247ca3f5c28474dc5111a96d6a36476b8
+	SendwithmetadataFrom 
+	{'txid': '1038c1528e3a74436b99c220c0ade7e247ca3f5c28474dc5111a96d6a36476b8'}
+	TxID: 1038c1528e3a74436b99c220c0ade7e247ca3f5c28474dc5111a96d6a36476b8
+
+
+insert into insuranceChainTransactions  values (null , "1038c1528e3a74436b99c220c0ade7e247ca3f5c28474dc5111a96d6a36476b8","Dawne","1QQVskdJbxswwt4qbU8wBK8VccrZt7j7W4bxn7","Policy","Issued","22-Dec-2013 10:10:00");
+
+insert into insuranceCustomerHistory values (null, "1038c1528e3a74436b99c220c0ade7e247ca3f5c28474dc5111a96d6a36476b8","Dawne","1QQVskdJbxswwt4qbU8wBK8VccrZt7j7W4bxn7","Policy issued","22-Dec-2013 10:10:00");
+
+
+
+Create BLOCK for these 4 txns
+-------------------------------
+sanjeev@mphstellar:/opt/mchain/cgi/data$ cat insuranceChainTxn1.lst 
+1|03d94a3d3772a0fefb5e7c929d623c780a605927a43274d6e2425d1640e817eb|Jennifer|JPMC|Quote|Published|21-Dec-2013 10:10:00
+2|42401b9cdf5f4961eede8d050df90231e6d7660f2150a96cc9ab3e5743394402|Dawne|JPMC|Quote|Published|21-Dec-2013 10:10:00
+3|17dc4331620298463b1d4e0e50617079773810c86927f1b0414e75a053ee8bf3|Dawne|JPMC|Quote|Accepted|22-Dec-2013 10:10:00
+4|1038c1528e3a74436b99c220c0ade7e247ca3f5c28474dc5111a96d6a36476b8|Dawne|JPMC|Policy|Issued|23-Dec-2013 10:10:00
+
+
+7|INSURANCE|INSURANCECHAIN|1X8XBM3s22NubBr8UoaGk5mL2uqyyCgepyAU72
+./sendwithmetadatafrom.py -b 1X8XBM3s22NubBr8UoaGk5mL2uqyyCgepyAU72 -c 1X8XBM3s22NubBr8UoaGk5mL2uqyyCgepyAU72 -f insuranceChainTxn1.lst
+
+
+root@mphstellar:/home/sanjeev/POC/DocRepo# ./sendwithmetadatafrom.py -b 1X8XBM3s22NubBr8UoaGk5mL2uqyyCgepyAU72 -c 1X8XBM3s22NubBr8UoaGk5mL2uqyyCgepyAU72 -f insuranceChainTxn1.lst
+Result = 
+{u'id': u'1465908780.78-306192', u'result': u'9a65accc04fbaf751885091634e84ef71d0fb70cd42f17163002070f22cd7939', u'error': None}
+9a65accc04fbaf751885091634e84ef71d0fb70cd42f17163002070f22cd7939
+SendwithmetadataFrom 
+{'txid': '9a65accc04fbaf751885091634e84ef71d0fb70cd42f17163002070f22cd7939'}
+TxID: 9a65accc04fbaf751885091634e84ef71d0fb70cd42f17163002070f22cd7939
+
+
+
+
+

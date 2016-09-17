@@ -1,0 +1,19 @@
+<insurance>
+	<id>Quote - Glen</id>
+	<uniqueNumber>INS-COM2-1123</uniqueNumber>
+	<Borrower>Glen</Borrower>
+	<PropertyAddress>4, 67 Park, San Jose,California</PropertyAddress>
+	<insuranceTerm>1 Year </insuranceTerm>
+	<effectiveDate>11-11-2013</effectiveDate>
+	<expiryDate>11-11-2014</expiryDate>
+	<premium>$10000</premium>
+	<DwellingCoverage>$200,000</DwellingCoverage>
+	<extendedCoverage>$100,000</extendedCoverage>
+	<equipmentsCoverage>$15,000</equipmentsCoverage>
+	<lossofUse></lossofUse>
+	<deductions></deductions>
+	<mortgageClause></mortgageClause>
+	<loanNumber></loanNumber>
+	<effectiveTime></effectiveTime>
+	<mchainReference></mchainReference>
+</insurance>

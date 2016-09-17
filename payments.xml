@@ -1,0 +1,480 @@
+<loandata>
+	<BorrowerProfile display='Borrower Profile'>
+		<Borrower>Dawne</Borrower>
+		<BorrowerType>Salaried</BorrowerType>
+		<LoanNumber>123456789124</LoanNumber>
+		<SSN>444-313-212</SSN>
+		<LTVratio>85%</LTVratio>
+		<Appraisal>4.29%</Appraisal>
+	</BorrowerProfile>
+	<MortgageInfo display='Mortgage Information'>
+		<mortgageType>FHA</mortgageType>
+		<amortizationType>Fixed</amortizationType>
+		<loanAmount>$45,21,600 </loanAmount>
+		<loanterm>360</loanterm>
+		<interestRate>4.25%</interestRate>
+		<loanStatus>Disbursed</loanStatus>
+		<insurance>Received</insurance>
+	</MortgageInfo>
+	<PropertyInfo display='Property Information'>
+		<purpose>Refinance</purpose>
+		<propertyType>Residence</propertyType>
+		<initialDeposit>$6,78,240</initialDeposit>
+		<Address>233, 1st Street Park, Whitehart Lane,California</Address>
+		<floodZone>Low to moderate</floodZone>
+		<emi>14500</emi>
+	</PropertyInfo>
+	<Documents>
+		<IdentityDocuments display='Identity Documents'>
+			<document>
+				<docname>SSN</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2014 09:30:00</timestamp>
+				<uploader>JPMC</uploader>
+				<auditor>JPMC</auditor>
+				<provider>JPMC</provider>
+			</document>
+			<document>
+				<docname>Passport</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2014 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>CEF</provider>
+			</document>
+			<document>
+				<docname>Driver License</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2014 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+			<document>
+				<docname>Pitch Point Verification</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2014 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+			<document>
+				<docname>Experian Credit Score</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2014 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+		</IdentityDocuments>
+		<MortgageDocuments display='Mortgage'>
+			<document>
+				<docname>1003 Uniform Residential Application</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-June-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+			<document>
+				<docname>ITOP</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-Jan-2014 10:10:20</timestamp>
+				<uploader>Mark</uploader>
+				<auditor>Jim</auditor>
+				<provider>Mark</provider>
+			</document>
+			<document>
+				<docname>HUD</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-June-2014 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+			<document>
+				<docname>Good Faith Estimate</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2014 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+		</MortgageDocuments>
+		<PropertyDocuments display='Propery Documents'>
+			<document>
+				<docname>Appraisal</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+			<document>
+				<docname>Prelims</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+			<document>
+				<docname>Previous Notes</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+			<document>
+				<docname>Inspection</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+				<file>ah212121u329329</file>
+			</document>
+			<document>
+				<docname>USPS</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+		</PropertyDocuments>
+		<Disclosures display='Disclosures'>
+			<document>
+				<docname>ECOA</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+			<document>
+				<docname>Service</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+			<document>
+				<docname>Right to Receive Appraisal</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+			<document>
+				<docname>Loan Origination Agreement</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+			<document>
+				<docname>Advance Fee Agreement</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+		</Disclosures>
+		<TaxAndInsurance display='Tax and Insurance'>
+			<document>
+				<docname>Tax Certificate (Online)</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+			<document>
+				<docname>Tax Cert (Title)</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+			<document>
+				<docname>Property Insurance</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>31-Jan-2014</timestamp>
+				<uploader>Mark</uploader>
+				<auditor>Jim</auditor>
+				<provider>Allianz</provider>
+				<ComplianceCheck>
+					<compliance checklist='Borrower/Borrowers name as per prelim' value='YES'/>
+					<compliance checklist='Coverage amount greater than or equal to appraised value or loan amount whichever is less' value='YES'/>
+					<compliance checklist='Property Address as per prelim' value='YES'/>
+					<compliance checklist='Deductibles not more than 2% of coverage' value='YES'/>
+					<compliance checklist='Effective and Expiry Date present' value='YES'/>
+					<compliance checklist='Premium amount present' value='YES'/>
+					<compliance checklist='ISAOA clause in mortgagee name' value='YES'/>	
+					<compliance checklist='Should loan be disbursed' value='YES'/>
+				</ComplianceCheck>
+				<policyDoc>-</policyDoc>
+			</document>
+		</TaxAndInsurance>
+		<Fee display='Fee'>
+			<document>
+				<docname>Title Fee Sheet</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+			<document>
+				<docname>Appraisal Fee</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+
+		</Fee>
+		<IncomeDocuments display='Income Documemts'>
+			<document>
+				<docname>Recent 2 months Pay Stubs</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+			<document>
+				<docname>Verification of Employment</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+			<document>
+				<docname>Verification of Deposit</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2011 09:30:00</timestamp>
+				<uploader>XYZ</uploader>
+				<auditor>XYZ</auditor>
+				<provider>ABC</provider>
+			</document>
+		</IncomeDocuments>
+		<FinalLoanDocuments display='Final Loan Documents'>
+			<document>
+				<docname>Closing Loan Package</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2014 09:30:00</timestamp>
+				<uploader>Murray</uploader>
+				<auditor>Phill</auditor>
+				<provider>John</provider>
+			</document>
+			<document>
+				<docname>Loan Disbursal Wire</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2014 09:30:00</timestamp>
+				<uploader>Murray</uploader>
+				<auditor>Phill</auditor>
+				<provider>John</provider>
+			</document>
+			<document>
+				<docname>Calculation Sheets</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2014 09:30:00</timestamp>
+				<uploader>Murray</uploader>
+				<auditor>Phill</auditor>
+				<provider>John</provider>
+			</document>
+			<document>
+				<docname>Compliance Checklists</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2014 09:30:00</timestamp>
+				<uploader>Murray</uploader>
+				<auditor>Phill</auditor>
+				<provider>John</provider>
+			</document>
+		</FinalLoanDocuments>
+		<MSRTransfer display='MSR Transfer Documents'>
+			<document>
+				<docname>Loan Servicing Agreement</docname>
+				<available>YES</available>
+				<verified>YES</verified>
+				<timestamp>01-May-2016 09:30:00</timestamp>
+				<uploader>Robert</uploader>
+				<auditor>Brown</auditor>
+				<provider>Joanne</provider>
+			</document>
+                </MSRTransfer>
+	</Documents>
+	<Payments>
+		<year display='2014'>
+		   <payment month='June'>
+                       <timestamp>01-June-2014 00:00:00</timestamp>
+                       <description>Towards EMI- June</description>
+                       <txnref>123872YER445-SRTCDE</txnref>
+                       <method>Standard Instruction</method>
+                       <amount>5000</amount>
+                       <status>Paid</status>
+                       <outstanding>45,16,600</outstanding>
+		   </payment>
+                   <payment month='July'>
+                       <timestamp>01-July-2014 00:00:00</timestamp>
+                       <description>Towards EMI- July14</description>
+                       <txnref>123873232322Y-SRTCDE</txnref>
+                       <method>Standard Instruction</method>
+                       <amount>5000</amount>
+                       <status>Paid</status>
+                       <outstanding>45,11,600</outstanding>
+		   </payment>
+                   <payment month='August'>
+                       <timestamp>01-Aug-2014 00:00:00</timestamp>
+                       <description>Towards EMI- Aug14</description>
+                       <txnref>123873232322Y-SRTCDE</txnref>
+                       <method>Standard Instruction</method>
+                       <amount>5000</amount>
+                       <status>Paid</status>
+                       <outstanding>44,16,600</outstanding>
+		   </payment>
+                   <payment month='September'>
+                       <timestamp>01-Sep-2014 00:00:00</timestamp>
+                       <description>Towards EMI- Sep 14</description>
+                       <txnref>123873232322Y-SRTCDE</txnref>
+                       <method>Standard Instruction</method>
+                       <amount>5000</amount>
+                       <status>Paid</status>
+                       <outstanding>44,11,600</outstanding>
+		   </payment>
+                   <payment month='October'>
+                       <timestamp>01-Oct-2014 00:00:00</timestamp>
+                       <description>Towards EMI- Oct 14</description>
+                       <txnref>123873232322Y-SRTCDE</txnref>
+                       <method>Standard Instruction</method>
+                       <amount>5000</amount>
+                       <status>Paid</status>
+                       <outstanding>43,16,600</outstanding>
+		   </payment>
+                   <payment month='November'>
+                       <timestamp>01-Nov-2014 00:00:00</timestamp>
+                       <description>Towards EMI- 2014 - November</description>
+                       <txnref>123873232322Y-SRTCDE</txnref>
+                       <method>Standard Instruction</method>
+                       <amount>5000</amount>
+                       <status>Paid</status>
+                       <outstanding>43,11,600</outstanding>
+		   </payment>
+                   <payment month='December'>
+                       <timestamp>01-Dec-2014 00:00:00</timestamp>
+                       <description>Towards EMI- December 2014</description>
+                       <txnref>1238732323qwq22Y-SRTCDE</txnref>
+                       <method>Standard Instruction</method>
+                       <amount>5000</amount>
+                       <status>Paid</status>
+                       <outstanding>42,16,600</outstanding>
+		   </payment>
+                </year>
+		<year display='2015'>
+		   <payment month='January'>
+                       <timestamp>01-Jan-2015 00:00:00</timestamp>
+                       <description>Towards EMI</description>
+                       <txnref>123872YER445-SRTCDE</txnref>
+                       <method>Standard Instruction</method>
+                       <amount>5000</amount>
+                       <status>Paid</status>
+                       <outstanding>42,11,600</outstanding>
+		   </payment>
+                   <payment month='February'>
+                       <timestamp>01-Feb-2015 00:00:00</timestamp>
+                       <description>Towards EMI</description>
+                       <txnref>123873232322Y-SRTCDE</txnref>
+                       <method>Standard Instruction</method>
+                       <amount>5000</amount>
+                       <status>Paid</status>
+                       <outstanding>41,16,600</outstanding>
+		   </payment>
+                   <payment month='March'>
+                       <timestamp>01-Mar-2015 00:00:00</timestamp>
+                       <description>Towards EMI</description>
+                       <txnref>123873232322Y-SRTCDE</txnref>
+                       <method>Standard Instruction</method>
+                       <amount>5000</amount>
+                       <status>Paid</status>
+                       <outstanding>41,11,600</outstanding>
+		   </payment>
+                   <payment month='April'>
+                       <timestamp>01-Apr-2015 00:00:00</timestamp>
+                       <description>Towards EMI</description>
+                       <txnref>123873232322Y-SRTCDE</txnref>
+                       <method>Standard Instruction</method>
+                       <amount>5000</amount>
+                       <status>Paid</status>
+                       <outstanding>40,16,600</outstanding>
+		   </payment>
+                   <payment month='May'>
+                       <timestamp>01-May-2015 00:00:00</timestamp>
+                       <description>Towards EMI</description>
+                       <txnref>123873232322Y-SRTCDE</txnref>
+                       <method>Standard Instruction</method>
+                       <amount>5000</amount>
+                       <status>Paid</status>
+                       <outstanding>40,11,600</outstanding>
+		   </payment>
+                   <payment month='June'>
+                       <timestamp>01-Jun-2015 00:00:00</timestamp>
+                       <description>Towards EMI- 2015Nov</description>
+                       <txnref>123873232322Y-SRTCDE</txnref>
+                       <method>Standard Instruction</method>
+                       <amount>5000</amount>
+                       <status>Paid</status>
+                       <outstanding>39,16,600</outstanding>
+		   </payment>
+                   <payment month='July'>
+                       <timestamp>01-Jul-2015 00:00:00</timestamp>
+                       <description>Towards EMI- July 2015</description>
+                       <txnref>1238732323qwq22Y-SRTCDE</txnref>
+                       <method>Standard Instruction</method>
+                       <amount>5000</amount>
+                       <status>Paid</status>
+                       <outstanding>39,11,600</outstanding>
+		   </payment>
+                </year>
+	</Payments>
+</loandata>

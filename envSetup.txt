@@ -1,0 +1,385 @@
+
+SQLITE - Steps
+===============
+
+sqlite> create table mchainEntity (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, EntityType ,Name, mchainAddress);
+
+
+Insurance Companies: 
+--------------------
+
+
+
+mchain: getnewaddress ALLIANZ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+{"method":"getnewaddress","params":["ALLIANZ"],"id":1,"chain_name":"mchain"}
+
+1JXfZJ4zM7awSPFC7DwEEMYpXTND6DHTGkRzmz
+mchain: getnewaddress ALLIANZ
+{"method":"getnewaddress","params":["ALLIANZ"],"id":1,"chain_name":"mchain"}
+
+1YphfcTrtiEDhe3P9x4i1tfpgmXiBh8vBG9WZk
+mchain: getnewaddress AIG    
+{"method":"getnewaddress","params":["AIG"],"id":1,"chain_name":"mchain"}
+
+1UHRx57K9h1wR1spWLe33gYtmQqXFUWoFdf3MG
+mchain: getnewaddress AIG
+{"method":"getnewaddress","params":["AIG"],"id":1,"chain_name":"mchain"}
+
+14wW8HNiQYT5PFgcCWQWyZh2UGpMMFQQdDcGwa
+mchain: getnewaddress AXA
+{"method":"getnewaddress","params":["AXA"],"id":1,"chain_name":"mchain"}
+
+1Y8VJpRoUP95iAGrwmJmXsbVqsN7CuC8suxPnT
+mchain: getnewaddress AXA
+{"method":"getnewaddress","params":["AXA"],"id":1,"chain_name":"mchain"}
+
+1JRJaDhg8EXnZvWz4rWrafMkJx3MhNWxX92eT
+mchain: getnewaddress INSURANCECHAIN
+{"method":"getnewaddress","params":["INSURANCECHAIN"],"id":1,"chain_name":"mchain"}
+
+1X8XBM3s22NubBr8UoaGk5mL2uqyyCgepyAU72
+mchain: getnewaddress MORTGAGECHAIN 
+{"method":"getnewaddress","params":["MORTGAGECHAIN"],"id":1,"chain_name":"mchain"}
+
+1UALod2okBiG3Ccd81MEFcki9RkiPihts4nxfj
+mchain: getnewaddress BANKINGCHAIN 
+{"method":"getnewaddress","params":["BANKINGCHAIN"],"id":1,"chain_name":"mchain"}
+
+1SqXG2oA2xddNGcdUHjtea5WHnQ4h1ckeM1mjJ
+mchain: getnewaddress JPMC        
+{"method":"getnewaddress","params":["JPMC"],"id":1,"chain_name":"mchain"}
+
+1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK
+mchain: getnewaddress CITI
+{"method":"getnewaddress","params":["CITI"],"id":1,"chain_name":"mchain"}
+
+1ECu1vm9DTfbDPTFs1CNa8AQYjzZ3c9sjk4Y6k
+mchain: getnewaddress BankofAmerica
+{"method":"getnewaddress","params":["BankofAmerica"],"id":1,"chain_name":"mchain"}
+
+1JzWPkqVsmGC3FTBbuZSoGDakgcddWxnLgbMNF
+mchain: getnewaddress WellsFargo   
+{"method":"getnewaddress","params":["WellsFargo"],"id":1,"chain_name":"mchain"}
+
+16es4e4fas3Pbhb3ZY8qGNq6Ly9E7U9khynVo4
+mchain: getnewaddress RBS       
+{"method":"getnewaddress","params":["RBS"],"id":1,"chain_name":"mchain"}
+
+1Pzsdifke6Mtv2NweFsCGVvuiuE1FXM5ZaKUmH
+
+mchain: grant 1JXfZJ4zM7awSPFC7DwEEMYpXTND6DHTGkRzmz send,receive
+{"method":"grant","params":["1JXfZJ4zM7awSPFC7DwEEMYpXTND6DHTGkRzmz","send,receive"],"id":1,"chain_name":"mchain"}
+
+a7c04330caab9ccc021d456dee4263365824a652f339de1bece012f6509afe4c
+mchain: grant 1YphfcTrtiEDhe3P9x4i1tfpgmXiBh8vBG9WZk send,receive
+{"method":"grant","params":["1YphfcTrtiEDhe3P9x4i1tfpgmXiBh8vBG9WZk","send,receive"],"id":1,"chain_name":"mchain"}
+
+71b53183fc6bec0d629e9cad933fac5b725503c84292c220802f9d28b51101d1
+mchain: grant 1UHRx57K9h1wR1spWLe33gYtmQqXFUWoFdf3MG send,receive
+{"method":"grant","params":["1UHRx57K9h1wR1spWLe33gYtmQqXFUWoFdf3MG","send,receive"],"id":1,"chain_name":"mchain"}
+
+e87f0cfed1fb09239cd5f0e6dc9b8cc132deddb2e05584a03669fbaf7090f80d
+mchain: grant 14wW8HNiQYT5PFgcCWQWyZh2UGpMMFQQdDcGwa send,receive
+{"method":"grant","params":["14wW8HNiQYT5PFgcCWQWyZh2UGpMMFQQdDcGwa","send,receive"],"id":1,"chain_name":"mchain"}
+
+3507be4bfff2ccedb07fb6aa34b5fdbe1c2124da9201a146f5268367275bb154
+mchain: grant 1Y8VJpRoUP95iAGrwmJmXsbVqsN7CuC8suxPnT send,receive
+{"method":"grant","params":["1Y8VJpRoUP95iAGrwmJmXsbVqsN7CuC8suxPnT","send,receive"],"id":1,"chain_name":"mchain"}
+
+6f13172db8f32f9c8734c927191904ca999b5c221e48229f6c81fdc075088bf5
+mchain: grant 1JRJaDhg8EXnZvWz4rWrafMkJx3MhNWxX92eT send,receive
+{"method":"grant","params":["1JRJaDhg8EXnZvWz4rWrafMkJx3MhNWxX92eT","send,receive"],"id":1,"chain_name":"mchain"}
+
+b880976f89dada897e65ddfea72b063cde0110ef35f4d9268c8802ab2e8938b5
+mchain: grant 1X8XBM3s22NubBr8UoaGk5mL2uqyyCgepyAU72 send,receive
+{"method":"grant","params":["1X8XBM3s22NubBr8UoaGk5mL2uqyyCgepyAU72","send,receive"],"id":1,"chain_name":"mchain"}
+
+c42efbe1be2cd270f0e5fa930f5138fb4f98700fce529938faeacdb8d956672f
+mchain: grant 1UALod2okBiG3Ccd81MEFcki9RkiPihts4nxfj send,receive
+{"method":"grant","params":["1UALod2okBiG3Ccd81MEFcki9RkiPihts4nxfj","send,receive"],"id":1,"chain_name":"mchain"}
+
+89cfc7ce3f0c5edd545fef92fc4e2c2e87bc8ba7e8485f06ab15e1d0e3b6f8a0
+mchain: grant 1SqXG2oA2xddNGcdUHjtea5WHnQ4h1ckeM1mjJ send,receive
+{"method":"grant","params":["1SqXG2oA2xddNGcdUHjtea5WHnQ4h1ckeM1mjJ","send,receive"],"id":1,"chain_name":"mchain"}
+
+d57d85ccb62e9aca9192780401d83a838c3ad124e639c749a04b9353e2ef8d58
+mchain: grant 1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK send,receive
+{"method":"grant","params":["1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK","send,receive"],"id":1,"chain_name":"mchain"}
+
+56abd0309a62a9695007999c1481728273a88c244a42e8a18788f4a257d76cd2
+mchain: grant 1ECu1vm9DTfbDPTFs1CNa8AQYjzZ3c9sjk4Y6k send,receive
+{"method":"grant","params":["1ECu1vm9DTfbDPTFs1CNa8AQYjzZ3c9sjk4Y6k","send,receive"],"id":1,"chain_name":"mchain"}
+
+ebe2077318d3f9f16f9ba981698a8661744764342b909b1a8d6a4aeec9024fd4
+mchain: grant 1JzWPkqVsmGC3FTBbuZSoGDakgcddWxnLgbMNF send,receive
+{"method":"grant","params":["1JzWPkqVsmGC3FTBbuZSoGDakgcddWxnLgbMNF","send,receive"],"id":1,"chain_name":"mchain"}
+
+450a14460a2c06a8b80d2cf952e2037a36c4a277ad7b5ec213d2c60cfddf6467
+mchain: grant 16es4e4fas3Pbhb3ZY8qGNq6Ly9E7U9khynVo4 send,receive
+{"method":"grant","params":["16es4e4fas3Pbhb3ZY8qGNq6Ly9E7U9khynVo4","send,receive"],"id":1,"chain_name":"mchain"}
+
+937536a0d9bffbf91aab575b3721fbec5439f37f0d9a50eb939cdb6ca006cb9c
+mchain: grant 1Pzsdifke6Mtv2NweFsCGVvuiuE1FXM5ZaKUmH send,receive
+{"method":"grant","params":["1Pzsdifke6Mtv2NweFsCGVvuiuE1FXM5ZaKUmH","send,receive"],"id":1,"chain_name":"mchain"}
+
+fc66a90f132b0efef7062fab143f9421dee9d68138186359f3974d85acabab88
+mchain: 
+
+==================
+
+
+mchain: getnewaddress Hayden_JPMC
+{"method":"getnewaddress","params":["Hayden_JPMC"],"id":1,"chain_name":"mchain"}
+
+1RsMU1G3aP7kjgWfunMLzBheV9tmt5nZkyTvLn
+---
+sqlite>  create table MortgageAccounts (ROWID INTEGER PRIMARY KEY AUTOINCREMENT, BankName ,CustomerName, mchainAddress);
+sqlite> insert into MortgageAccounts values (null, "JPMC", "Hayden" ,"1RsMU1G3aP7kjgWfunMLzBheV9tmt5nZkyTvLn");
+
+JPMC: 1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK Hayden :1RsMU1G3aP7kjgWfunMLzBheV9tmt5nZkyTvLn : File Hayden1.xml 
+
+Result = 
+{u'id': u'1465768705.87-831596', u'result': u'7869e4494b09a1cd8949573a5d5713dcb69080f77b6e1c406510f4d6b7652c54', u'error': None}
+7869e4494b09a1cd8949573a5d5713dcb69080f77b6e1c406510f4d6b7652c54
+SendwithmetadataFrom 
+{'txid': '7869e4494b09a1cd8949573a5d5713dcb69080f77b6e1c406510f4d6b7652c54'}
+TxID: 7869e4494b09a1cd8949573a5d5713dcb69080f77b6e1c406510f4d6b7652c54
+root@mphstellar:/home/sanjeev/POC/DocRepo# ./sendwithmetadatafrom.py -b 1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK -c 1RsMU1G3aP7kjgWfunMLzBheV9tmt5nZkyTvLn -f Hayden1.xml
+
+sqlite > insert into mortgageChainTransactions  values (null , "7869e4494b09a1cd8949573a5d5713dcb69080f77b6e1c406510f4d6b7652c54", "JPMC", "1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK", "Hayden", "1RsMU1G3aP7kjgWfunMLzBheV9tmt5nZkyTvLn","10-June-2014 10:10:00");
+
+
+----------------------------------------------------------------
+
+
+mchain: getnewaddress Glen_JPMC                                  
+{"method":"getnewaddress","params":["Glen_JPMC"],"id":1,"chain_name":"mchain"}
+
+13mXFPHN2GEAGK2SPi2jx79oRGzHeuS1f2U9JP
+mchain: grant 13mXFPHN2GEAGK2SPi2jx79oRGzHeuS1f2U9JP send,receive
+{"method":"grant","params":["13mXFPHN2GEAGK2SPi2jx79oRGzHeuS1f2U9JP","send,receive"],"id":1,"chain_name":"mchain"}
+
+d38c8427efcaf455484167c1ef8fc4fd3db90a4ee5ec38a19a282f62256b4f5b
+
+JPMC:1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK Glen:13mXFPHN2GEAGK2SPi2jx79oRGzHeuS1f2U9JP  File : Glen1.xml
+
+sqlite> insert into MortgageAccounts values (null, "JPMC", "Glen","13mXFPHN2GEAGK2SPi2jx79oRGzHeuS1f2U9JP");
+
+----
+Result = 
+{u'id': u'1465770698.86-723243', u'result': u'c9fc9128cb722dc9eedeafebc5e21feecf1b8e3fb1625fb6f7d21df4d483155e', u'error': None}
+c9fc9128cb722dc9eedeafebc5e21feecf1b8e3fb1625fb6f7d21df4d483155e
+SendwithmetadataFrom 
+{'txid': 'c9fc9128cb722dc9eedeafebc5e21feecf1b8e3fb1625fb6f7d21df4d483155e'}
+TxID: c9fc9128cb722dc9eedeafebc5e21feecf1b8e3fb1625fb6f7d21df4d483155e
+root@mphstellar:/home/sanjeev/POC/DocRepo# ./sendwithmetadatafrom.py -b 1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK -c 13mXFPHN2GEAGK2SPi2jx79oRGzHeuS1f2U9JP  -f Glen1.xml
+--
+sqlite> insert into mortgageChainTransactions  values (null , "c9fc9128cb722dc9eedeafebc5e21feecf1b8e3fb1625fb6f7d21df4d483155e","JPMC","1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK","Glen","13mXFPHN2GEAGK2SPi2jx79oRGzHeuS1f2U9JP","20-June-2014 10:10:00");
+
+POST THESE 2 TRANSACTIONS in to a Mortgage chain as lst file
+-------------
+
+sqlite> insert into mortgageCustomerHistory values (null, "c9fc9128cb722dc9eedeafebc5e21feecf1b8e3fb1625fb6f7d21df4d483155e","Glen","13mXFPHN2GEAGK2SPi2jx79oRGzHeuS1f2U9JP","Initial Loan Application","20-June-2014 10:10:00");
+sqlite> insert into mortgageCustomerHistory values (null, "7869e4494b09a1cd8949573a5d5713dcb69080f77b6e1c406510f4d6b7652c54","Hayden","1RsMU1G3aP7kjgWfunMLzBheV9tmt5nZkyTvLn","Initial Loan Application","10-June-2014 10:10:00");
+
+
+sanjeev@mphstellar:/opt/mchain/cgi/data$ cat mortgageChainTxn1.lst
+1|7869e4494b09a1cd8949573a5d5713dcb69080f77b6e1c406510f4d6b7652c54|JPMC|1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK|Hayden|1RsMU1G3aP7kjgWfunMLzBheV9tmt5nZkyTvLn|10-June-2014 10:10:00|
+2|c9fc9128cb722dc9eedeafebc5e21feecf1b8e3fb1625fb6f7d21df4d483155e|JPMC|1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK|Glen|13mXFPHN2GEAGK2SPi2jx79oRGzHeuS1f2U9JP|20-June-2014 10:10:00|
+------------------------
+root@mphstellar:/home/sanjeev/POC/DocRepo# ./sendwithmetadatafrom.py -b 1UALod2okBiG3Ccd81MEFcki9RkiPihts4nxfj -c 1UALod2okBiG3Ccd81MEFcki9RkiPihts4nxfj -f mortgageChainTxn1.lst
+
+Result = 
+{u'id': u'1465771312.86-119207', u'result': u'd4b40a853f80ee15233556257556aa2d66084a191ff0532a7e18faf94387bbd2', u'error': None}
+d4b40a853f80ee15233556257556aa2d66084a191ff0532a7e18faf94387bbd2
+SendwithmetadataFrom 
+{'txid': 'd4b40a853f80ee15233556257556aa2d66084a191ff0532a7e18faf94387bbd2'}
+TxID: d4b40a853f80ee15233556257556aa2d66084a191ff0532a7e18faf94387bbd2  ==========> Mortgage Block with 2 txns
+
+
+=============================================================================================
+=================================================================================================================================================
+=================================================================================================================================================
+mchain: getnewaddress Monica_JPMC                                
+{"method":"getnewaddress","params":["Monica_JPMC"],"id":1,"chain_name":"mchain"}
+
+1TekpixrDiwmu7U5aWKQWJ553BQLJZeduBZxEi
+mchain: getnewaddress Dawne_JPMC 
+{"method":"getnewaddress","params":["Dawne_JPMC"],"id":1,"chain_name":"mchain"}
+
+1Ym2jTKQzYM3nMM6H4NQvKgDQao7ZNU9iuoaiY
+
+GRANT PERMISSIONS
+------------------
+mchain: grant 1TekpixrDiwmu7U5aWKQWJ553BQLJZeduBZxEi send,receive
+{"method":"grant","params":["1TekpixrDiwmu7U5aWKQWJ553BQLJZeduBZxEi","send,receive"],"id":1,"chain_name":"mchain"}
+
+6069ad0906a84889fa61e97eee249d3867d4caf4115a4aff93145ed1648294a8
+mchain: grant 1Ym2jTKQzYM3nMM6H4NQvKgDQao7ZNU9iuoaiY send,receive
+{"method":"grant","params":["1Ym2jTKQzYM3nMM6H4NQvKgDQao7ZNU9iuoaiY","send,receive"],"id":1,"chain_name":"mchain"}
+
+5bafe5b22b87a3c84ea05b28af51b2696b480010df3da16ce5ea980564382527
+
+INSERT details to DB
+----------------------
+sqlite> insert into MortgageAccounts values (null, "JPMC", "Monica","1TekpixrDiwmu7U5aWKQWJ553BQLJZeduBZxEi");
+sqlite> insert into MortgageAccounts values (null, "JPMC", "Dawne","1Ym2jTKQzYM3nMM6H4NQvKgDQao7ZNU9iuoaiY");
+
+
+
+
+POST a LOAN APPLICATION Created files to Mchain.
+----------------
+
+1 JPMC: 1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK Monica :1TekpixrDiwmu7U5aWKQWJ553BQLJZeduBZxEi : File Monica1.xml 
+
+./sendwithmetadatafrom.py -b 1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK -c 1TekpixrDiwmu7U5aWKQWJ553BQLJZeduBZxEi  -f Monica1.xml
+	Result = 
+	{u'id': u'1465814244.19-920505', u'result': u'47258f8d551bf850eb30bf964262e022c22a0f2142b3fcb1b13ff387d86dee19', u'error': None}
+	47258f8d551bf850eb30bf964262e022c22a0f2142b3fcb1b13ff387d86dee19
+	SendwithmetadataFrom 
+	{'txid': '47258f8d551bf850eb30bf964262e022c22a0f2142b3fcb1b13ff387d86dee19'}
+	TxID: 47258f8d551bf850eb30bf964262e022c22a0f2142b3fcb1b13ff387d86dee19
+
+
+insert into mortgageChainTransactions  values (null , "47258f8d551bf850eb30bf964262e022c22a0f2142b3fcb1b13ff387d86dee19","JPMC","1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK","Monica","1TekpixrDiwmu7U5aWKQWJ553BQLJZeduBZxEi","20-June-2011 10:10:00");
+
+insert into mortgageCustomerHistory values (null, "47258f8d551bf850eb30bf964262e022c22a0f2142b3fcb1b13ff387d86dee19","Monica","1TekpixrDiwmu7U5aWKQWJ553BQLJZeduBZxEi","Loan Initiated","20-June-2011 10:10:00");
+
+
+2.JPMC: 1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK Dawne :1Ym2jTKQzYM3nMM6H4NQvKgDQao7ZNU9iuoaiY : File Dawne1.xml 
+
+./sendwithmetadatafrom.py -b 1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK -c 1Ym2jTKQzYM3nMM6H4NQvKgDQao7ZNU9iuoaiY  -f Dawne1.xml
+
+	Result = 
+	{u'id': u'1465814280.47-940568', u'result': u'22cd284f2c920c8882ef1b4829e4da077fc7f0ed41ffcd9aa9a1f6c4dda5ed68', u'error': None}
+	22cd284f2c920c8882ef1b4829e4da077fc7f0ed41ffcd9aa9a1f6c4dda5ed68
+	SendwithmetadataFrom 
+	{'txid': '22cd284f2c920c8882ef1b4829e4da077fc7f0ed41ffcd9aa9a1f6c4dda5ed68'}
+	TxID: 22cd284f2c920c8882ef1b4829e4da077fc7f0ed41ffcd9aa9a1f6c4dda5ed68
+
+insert into mortgageChainTransactions  values (null , "22cd284f2c920c8882ef1b4829e4da077fc7f0ed41ffcd9aa9a1f6c4dda5ed68","JPMC","1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK","Dawne","1Ym2jTKQzYM3nMM6H4NQvKgDQao7ZNU9iuoaiY","21-Dec-2013 10:10:00");
+
+
+insert into mortgageCustomerHistory values (null, "22cd284f2c920c8882ef1b4829e4da077fc7f0ed41ffcd9aa9a1f6c4dda5ed68","Dawne","1Ym2jTKQzYM3nMM6H4NQvKgDQao7ZNU9iuoaiY","Loan Initiated","21-Dec-2013 10:10:00");
+
+
+----- Addded these 2 rxns to 2nd chain : mortgageChainTxn2.lst
+1|47258f8d551bf850eb30bf964262e022c22a0f2142b3fcb1b13ff387d86dee19|JPMC|1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK|Monica|1TekpixrDiwmu7U5aWKQWJ553BQLJZeduBZxEi|20-June-2011 10:10:00
+2|22cd284f2c920c8882ef1b4829e4da077fc7f0ed41ffcd9aa9a1f6c4dda5ed68|JPMC|1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK|Dawne|1Ym2jTKQzYM3nMM6H4NQvKgDQao7ZNU9iuoaiY|21-Dec-2013 10:10:00
+
+
+Add these to main Mortgage chain
+
+./sendwithmetadatafrom.py -b 1UALod2okBiG3Ccd81MEFcki9RkiPihts4nxfj -c 1UALod2okBiG3Ccd81MEFcki9RkiPihts4nxfj -f mortgageChainTxn2.lst
+
+	Result = 
+	{u'id': u'1465814727.59-433176', u'result': u'7459a13429fcd8b7ed434d9ae47fff085718d6326607320fc8ba258b74987e4d', u'error': None}
+	7459a13429fcd8b7ed434d9ae47fff085718d6326607320fc8ba258b74987e4d
+	SendwithmetadataFrom 
+	{'txid': '7459a13429fcd8b7ed434d9ae47fff085718d6326607320fc8ba258b74987e4d'}
+	TxID: 7459a13429fcd8b7ed434d9ae47fff085718d6326607320fc8ba258b74987e4d
+
+
+=================================================================================================================================================
+
+
+
+
+
+
+
+
+
+============================
+JULY 25 - 2015
+-------------------
+1. root@mphstellar:/home/sanjeev/POC/DocRepo# ./sendwithmetadatafrom.py -b 1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK -c 1Ym2jTKQzYM3nMM6H4NQvKgDQao7ZNU9iuoaiY  -f Dawne6-2014payments.xml
+
+Result = 
+{u'id': u'1469428357.2-304298', u'result': u'b85f1dc0aa167e68d5e6b76747fdec0b6e2b6eb63109c2722bb0df7079de929e', u'error': None}
+b85f1dc0aa167e68d5e6b76747fdec0b6e2b6eb63109c2722bb0df7079de929e
+-------------------
+
+2. root@mphstellar:/home/sanjeev/POC/DocRepo# ./sendwithmetadatafrom.py -b 1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK -c 1Ym2jTKQzYM3nMM6H4NQvKgDQao7ZNU9iuoaiY  -f Dawne7-Payments2015.xml
+Result = 
+{u'id': u'1469428831.93-345164', u'result': u'77cefae33a5a076dcfb9b4bae6edfa1061f2422f87c44bf1882dd5372c2eb9db', u'error': None}
+77cefae33a5a076dcfb9b4bae6edfa1061f2422f87c44bf1882dd5372c2eb9db
+SendwithmetadataFrom 
+{'txid': '77cefae33a5a076dcfb9b4bae6edfa1061f2422f87c44bf1882dd5372c2eb9db'}
+TxID: 77cefae33a5a076dcfb9b4bae6edfa1061f2422f87c44bf1882dd5372c2eb9db
+------------------------------
+
+
+3. root@mphstellar:/home/sanjeev/POC/DocRepo# ./sendwithmetadatafrom.py -b 1UALod2okBiG3Ccd81MEFcki9RkiPihts4nxfj -c 1UALod2okBiG3Ccd81MEFcki9RkiPihts4nxfj -f mortgageChainTxn7.lst
+BankAddress=1UALod2okBiG3Ccd81MEFcki9RkiPihts4nxfj
+CustomerAddress=1UALod2okBiG3Ccd81MEFcki9RkiPihts4nxfj
+File=mortgageChainTxn7.lst
+======================================
+Result = 
+{u'id': u'1469429348.11-522450', u'result': u'ab1bd9f31edf013a83760a8043ec3b5838487dae6ae0ce874b81b12b217a0ed4', u'error': None}
+ab1bd9f31edf013a83760a8043ec3b5838487dae6ae0ce874b81b12b217a0ed4
+SendwithmetadataFrom 
+{'txid': 'ab1bd9f31edf013a83760a8043ec3b5838487dae6ae0ce874b81b12b217a0ed4'}
+TxID: ab1bd9f31edf013a83760a8043ec3b5838487dae6ae0ce874b81b12b217a0ed4
+
+
+-------------------------------------------------------
+INititated MSR transfer  
+
+EMI no. 15 posted in Chain
+--------------------------
+1.	root@mphstellar:/home/sanjeev/POC/DocRepo# ./sendwithmetadatafrom.py -b 1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK -c 1Ym2jTKQzYM3nMM6H4NQvKgDQao7ZNU9iuoaiY  -f Dawne8-emi15-Aug2015.xml 
+
+Result = 
+{u'id': u'1469430138.5-823696', u'result': u'b313e852f1425ade3ca96f7bc7fefed2c33f1958e7628db5e403628d73eba580', u'error': None}
+b313e852f1425ade3ca96f7bc7fefed2c33f1958e7628db5e403628d73eba580
+SendwithmetadataFrom 
+{'txid': 'b313e852f1425ade3ca96f7bc7fefed2c33f1958e7628db5e403628d73eba580'}
+TxID: b313e852f1425ade3ca96f7bc7fefed2c33f1958e7628db5e403628d73eba580
+
+2. 	root@mphstellar:/home/sanjeev/POC/DocRepo# ./sendwithmetadatafrom.py -b 1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK -c 1Ym2jTKQzYM3nMM6H4NQvKgDQao7ZNU9iuoaiY  -f Dawne9-MSRInitiated.xml
+======================================
+	Result = 
+	{u'id': u'1469431874.75-188296', u'result': u'f187402f562b743793dbdf6d9d2dfc723f7a841077ff7384fd1e2d97fc872758', u'error': None}
+	f187402f562b743793dbdf6d9d2dfc723f7a841077ff7384fd1e2d97fc872758
+	SendwithmetadataFrom 
+	{'txid': 'f187402f562b743793dbdf6d9d2dfc723f7a841077ff7384fd1e2d97fc872758'}
+	TxID: f187402f562b743793dbdf6d9d2dfc723f7a841077ff7384fd1e2d97fc872758
+
+
+3.	root@mphstellar:/home/sanjeev/POC/DocRepo# ./sendwithmetadatafrom.py -b 1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK -c 1Ym2jTKQzYM3nMM6H4NQvKgDQao7ZNU9iuoaiY  -f Dawne10-MSRCompleted.xml 
+	Result = 
+{u'id': u'1469432170.17-613822', u'result': u'33cc80a4bef13c63245c20ca49a1bceda4ae23e8f3a758e47d41521bdff7cd08', u'error': None}
+33cc80a4bef13c63245c20ca49a1bceda4ae23e8f3a758e47d41521bdff7cd08
+SendwithmetadataFrom 
+{'txid': '33cc80a4bef13c63245c20ca49a1bceda4ae23e8f3a758e47d41521bdff7cd08'}
+TxID: 33cc80a4bef13c63245c20ca49a1bceda4ae23e8f3a758e47d41521bdff7cd08
+
+4. 	root@mphstellar:/home/sanjeev/POC/DocRepo# ./sendwithmetadatafrom.py -b 1KwFY7SUQQn4V4xNR6PPpq5mr2PRUYPrh4zhzK -c 1Ym2jTKQzYM3nMM6H4NQvKgDQao7ZNU9iuoaiY  -f Dawne11-serviceXferletterSent.xml
+
+	======================================
+	Result = 
+	{u'id': u'1469432593.15-777247', u'result': u'7d9455b1def09252a01d8d2a329c315ae2f6615a6fc3055afbf24afa24f877a6', u'error': None}
+	7d9455b1def09252a01d8d2a329c315ae2f6615a6fc3055afbf24afa24f877a6
+	SendwithmetadataFrom 
+	{'txid': '7d9455b1def09252a01d8d2a329c315ae2f6615a6fc3055afbf24afa24f877a6'}
+	TxID: 7d9455b1def09252a01d8d2a329c315ae2f6615a6fc3055afbf24afa24f877a6
+
+
+------INSERT TO CHAIN LIST
+
+5.	root@mphstellar:/home/sanjeev/POC/DocRepo# ./sendwithmetadatafrom.py -b 1UALod2okBiG3Ccd81MEFcki9RkiPihts4nxfj -c 1UALod2okBiG3Ccd81MEFcki9RkiPihts4nxfj -f mortgageChainTxn8.lst 
+
+	======================================
+Result = 
+{u'id': u'1469433020.64-746399', u'result': u'623dbeb8101b588aa2ee0472955ac0795ebd5dcd59e766da8895323335898c43', u'error': None}
+623dbeb8101b588aa2ee0472955ac0795ebd5dcd59e766da8895323335898c43
+SendwithmetadataFrom 
+{'txid': '623dbeb8101b588aa2ee0472955ac0795ebd5dcd59e766da8895323335898c43'}
+TxID: 623dbeb8101b588aa2ee0472955ac0795ebd5dcd59e766da8895323335898c43
+
+	
+
+
+
